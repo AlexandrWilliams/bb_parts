@@ -1,0 +1,286 @@
+<style type="text/css">
+		.psefdo__body {
+			max-width: 1168px;
+			padding: 0;
+			margin: 0 auto;
+			position: relative;
+		}
+		.header {
+			z-index: 1;
+			position: relative;
+			height: 150px;
+			width: 100%;
+			background-color: #f05a2873;
+		}
+		.logo {
+			max-width: fit-content;
+			margin: 15px 0 0 55px;
+		}
+		/*main content*/
+		.main-conteiner {
+			z-index: 1;
+			display: flex;
+			flex-flow: column;
+			position: relative;
+		}
+		/*img*/
+		.blackout__picture {
+			display: flex;
+    		flex-flow: column;
+    		width: 100%;
+		    justify-content: space-evenly;
+		    align-items: center;
+    		background-color: #0000005e;
+		}
+		.img__conteiner {
+			height: 315px;
+			margin: 20px auto;
+			display: flex;
+		}
+		.blackout__picture img {
+			max-width: 315px;
+			margin: 0 25px;
+			padding: 2px;
+			border-radius: 12px;
+			background-color: white;
+			border: 4px solid #93817c;
+		}
+		/*txt*/
+		.blackout__text-conteiner {
+			z-index: 1;
+			margin: auto;
+			position: relative;
+			max-width: 1100px;
+			text-align: center;
+			padding: 45px 90px;
+			color: white;
+			background-color: #000000ba;
+		}
+		h3 {
+			padding: 15px;
+		}
+		.txt {
+			margin: 0;
+			font-size: 26px;
+			letter-spacing: 1.5px;
+			line-height: 32px;
+		}
+		.blackout__text-conteiner p {
+			font-size: 18px;
+		}
+		h3 span {
+			color: #ff9d6f;
+		}
+		p span {
+			font-weight: bold;
+			color: #ff9d6f;
+		}
+		/*footer img*/
+		.footer {
+			z-index: 1;
+			position: relative;
+			background-color: #000000ba;
+			display: flex;
+		}
+		.footer img {
+			margin: auto;
+		}
+		/*background img*/
+		.blackout {
+			display: flex;
+			top: 0;
+			position: absolute;
+			background-color: #000000;
+		}
+		.blackout, .blackout__img {
+			width: 100%;
+			height: 100%;
+		}
+		.blackout__img {
+			opacity: 0.8;
+		}
+		@media screen and (max-width: 1248px) {
+			.header {
+				height: 90px;
+			}
+			.logo {
+				height: 65px;
+			}
+			.blackout__picture img {
+				max-width: 275px;
+			}
+			.footer img {
+				height: 65px;
+			}
+		}
+		@media screen and (max-width: 1000px) {
+			.header {
+				height: 75px;
+			}
+			.logo {
+				height: 55px;
+				margin: 10px 25px;
+			}
+			.img__conteiner {
+				height: 245px;
+			}
+			.blackout__picture img {
+				max-width: 225px;
+				margin: 15px 15px;
+			}
+			.blackout__text-conteiner {
+				padding: 25px 45px;
+			}
+			.footer img {
+				height: 55px;
+			}
+		}
+		@media screen and (max-width: 740px) {
+			.header {
+				height: 75px;
+			}
+			.logo {
+				height: 55px;
+				margin: 10px 25px;
+			}
+			.blackout__picture img {
+				max-width: 205px;
+			}
+			.blackout__text-conteiner {
+				padding: 10px 35px;
+			}
+			.footer img {
+				height: 55px;
+			}
+		}
+		@media screen and (max-width: 700px) {
+			.blackout__picture img {
+				max-width: 190px;
+			}
+			h3 {
+				padding: 10px;
+			}
+			.txt {
+				font-size: 20px;
+				letter-spacing: 1.2px;
+				line-height: 24px;
+			}
+		}
+		@media screen and (max-width: 660px) {
+			.blackout__picture img {
+				max-width: 180px;
+			}
+		}
+		@media screen and (max-width: 625px) {
+			.header {
+				height: 55px;
+			}
+			.logo {
+				height: 35px;
+				margin: 10px 25px;
+			}
+			.txt {
+				font-size: 16px;
+				letter-spacing: 1.2px;
+				line-height: 17px;
+			}
+			.blackout__text-conteiner {
+			    padding: 10px;
+			}
+			.blackout__text-conteiner p {
+			    font-size: 16px;
+			}
+			.blackout__picture img {
+				max-width: 170px;
+			}
+			.footer img {
+				height: 50px;
+			}
+		}
+		@media screen and (max-width: 570px) {
+			.blackout__picture img {
+				max-width: 160px;
+			}
+			.footer img {
+				height: 45px;
+			}
+		}
+		@media screen and (max-width: 540px) {
+			.blackout__picture img {
+				max-width: 150px;
+			}
+			.footer img {
+				height: 40px;
+			}
+		}
+		@media screen and (max-width: 510px) {
+			.blackout__picture img {
+				max-width: 140px;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.img__disappear {
+				display: none;
+			}
+			.blackout__picture img {
+				max-width: 300px;
+			}
+		}
+		@media screen and (max-width: 410px) {
+			.blackout__picture img {
+				max-width: 255px;
+			}
+			.footer img {
+				height: 35px;
+			}
+		}
+		@media screen and (max-width: 360px) {
+			.footer img {
+				height: 30px;
+			}
+		}
+	</style>
+<div class="psefdo__body">
+	<div class="header">
+		<img class="logo" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/acs_logo.png">
+	</div>
+	<div class="main-conteiner">
+		<div class="blackout__picture blackout__picture_top blackout__picture_onLeft">
+			<div class="img__conteiner">
+				<img class="img__disappear" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/acs-outlaw_web.png">
+				<img class="imageFromBBtop centerImg" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/bbRenegadeAcs2_web.png">
+				<img class="img__disappear" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/gravely_web.png">
+			</div>
+		</div>
+		<div class="blackout__text-conteiner">
+			<h3 class="txt txt__acs_info">THIS IS AN ORIGINAL BAD BOY MOWER</h3>
+			<h3 class="txt txt__acs_info">Advanced Chute System Model <span>#ACS 6019B</span> Part <span>#088-6019-00</span></h3>
+			<h3 class="txt txt__acs_info"><span>Fits:</span> Bad boy : Rogue, Rebel, Renegade 61" & 72"</h3>
+			<p class="txt txt__shipping">We try to keep all of the Advanced Chute Systems in stock at all times. However, these are fast selling items and occasionally, we run out of one or two types and we reorder as quickly as possible. In most cases, they should ship out the same day or the next business day, if you have ordered it after 2:30 p.m. EST or over the weekend. <span>International Buyers – Please Note: Import duties, taxes and charges are not included in the item price or shipping charges. These charges are the buyer’s responsibility.</span></p>
+			<h3 class="txt txt__beAware">Please before buying go to advance chute system dotcom and check compatibility (please be aware that there is some assembly required, with the possibility of having to drill 3 holes)</h3>
+			<div class="txt txt__adc-feature">
+				<h3 class="txt txt__acs_feature">Take Complete Control Of Your Mower Dischage!</h3>
+				<h3 class="txt txt__acs_feature">Protect people and property from flying debris, keep grass out of flower beds and driveways, reducing raking, blowing and re-mowing. Instantly turns your self-mulching zero-turn mower into a mulching machine!</h3>
+				<img src="">
+				<p class="txt txt__acs_feature">Installs in minutes and features an all steel 1/4" mounting plate and 11-gauge steel shield with a side-mount engage/disengage lever for quick and easy operation. With a size to fit virtually any zero-turn mower, the Advanced Chute System replaces your mower’s existing chute with a multi-function discharge system that gives you complete control of your mower’s discharge. Perfect for controlling your mower in high-density areas where flying debris can damage windows, vehicles or even people. It’s perfect for turning your self-mulching mower into a mulching machine - especially on leaves for fall cleanups!</p>
+				<img src="">
+			</div>
+			<p class="txt txt__returns"><span>Returns:</span> We are happy to accept your returns within 14 business days as long as the item is in like new unused & not been installed condition.If you have ordered the wrong ACS for your mower, we will be glad to help get you the correct one to fit your mower. Your only additional expense would be the shipping of the unit you ordered and shipping of the correct unit to you. However, if you just want a refund, you will be responsible for the return shipping, we will accept the return in the above listed condition, but you will be responsible for the shipping charges previously paid (as we already shipped the item to you and incurred these expenses) and you will be charged a 25% restocking fee. Feel free to message us with your mower information prior to ordering so we can help you order the correct unit the first time. We generally issue a refund via PayPal the day your item is received.</p>
+			<p class="txt txt__feedback"><span>Feedback:</span> Macclenny Cycle & Marine Guarantees our customers amazing customer service. If you have a problem please message us prior to leaving feedback and we will handle it immediately.</p>
+			<p class="txt txt__shipping"><span>Shipping:</span> All Shipment should normally leave our warehouse the same business day. We also upload tracking information on every item we ship for your convenience.</p>
+		</div>
+		<div class="blackout__picture blackout__picture_bottom blackout__picture_onRight">
+			<div class="img__conteiner">
+				<img class="img__disappear" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/john-deere.png">
+				<img class="imageFromBBtop" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/bbRenegadeAcs_web.png">
+				<img class="img__disappear" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/scag.png">
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<img src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/bad_boy_mowers_main_logo_horizon.png">
+	</div>
+	<div class="blackout">
+		<img class="blackout__img" src="https://raw.githubusercontent.com/AlexandrWilliams/picStoregeForEbay/main/ebayHtml/img/bbRenegadeAcs.png">
+	</div>
+</div>
