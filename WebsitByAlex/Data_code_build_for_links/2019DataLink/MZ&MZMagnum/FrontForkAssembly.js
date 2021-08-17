@@ -1,0 +1,16 @@
+const linksDataForMap = {
+'$1' : `4 $010-1050-00 $Caster Bearing 2016 - 1641 Bearing`,
+'$2' : `2 $013-8050-00 $1/2-13 Nylon Flange Nut`,
+'$3' : `2 $013-9004-00 $1" Fine Thread 1/2 Nylock Nut`,
+'$4' : `2 $014-2025-00 $2017 Bearing Cover`,
+'$5' : `2 $018-0005-00 $1-14 x 5 Hex Bolt Grade 8 Zinc Yellow`,
+'$6' : `2 $018-0035-00 $1/2 -13 x 7.5 Hex Bolt Grade 5`,
+'$7' : `4 $022-7009-00 $Front Wheel Bearing`,
+'$8' : `2 $022-8049-00 $11x6-5 front tire & wheel assembly`,
+'$9' : `2 $023-0002-00 $2017 MZ Front fork`,
+'$10' : `2 $025-0003-00$ 2016 Front Bearing Spacer`,
+'$11' : `2 $025-0008-00$ Front Wheel Spanner`,
+'$12' : `2 $058-1000-00$ 1" x .25" Spacer`,
+'$13' : `1 $070-5420-00$ 2017 MZ/ZT 54"-60" Frame`,
+'$14' : `1 $070-5810-00$ 2017 MZ/ZT 42"-48" Frame`,
+};
