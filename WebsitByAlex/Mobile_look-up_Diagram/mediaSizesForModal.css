@@ -1,0 +1,127 @@
+@media screen and (min-width: 840px) {
+	.modal__for-quick-ref_content {
+		width: fit-content;
+		margin-top: -35px;
+	}
+	.modal__for-quick-ref_description,.modal__for-quick-ref_part-number {
+		padding: 10px;
+	}
+	.modal__for-quick-ref_description, .modal__for-quick-ref_part-number, .modal__for-quick-ref_price {
+	    font-size: 16px;
+	    font-weight: bold;
+	    letter-spacing: 1px;
+	    line-height: 26px;
+	    color: #656565;
+	}
+	.modal__for-quick-ref_container img {
+		width: 325px;
+	}
+	.about_part {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		align-items: center;
+		margin: 10px auto;
+		padding: 0 10px;
+	}
+	.modalForm_QTY-AddToCart {
+		margin: 0;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		line-height: 26px;
+		color: #656565; 
+	}
+	.modalForm__element_addToCart {
+	    margin: 0;
+	}
+	.modal__for-quick-ref_question-about-product h4 {
+    	font-size: 18px;
+    }
+    .modal__for-quick-ref_close-btn {
+	    cursor: pointer;
+	    width: 18px;
+	    height: 18px;
+	    top: -18px;
+	    right: -25px;
+	    position: absolute;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-image: url(https://www.badboylawnmowerparts.com/v/popUpForDiagram/closeX.png);
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.modal__for-quick-ref_content {
+		width: 290px;
+		margin-top: -30px;
+	}
+	.modal__for-quick-ref_bg {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.modal__for-quick-ref_header {
+		flex-flow: column;
+		align-items: center;
+	}
+	.modal__for-quick-ref_description, .modal__for-quick-ref_part-number {
+    	padding: 2.5px 10px;
+	}
+	.modal__for-quick-ref_description, .modal__for-quick-ref_part-number, .modal__for-quick-ref_price {
+	    font-size: 14px;
+	    font-weight: bold;
+	    letter-spacing: 0.5px;
+	    line-height: 16px;
+	    color: #656565;
+	}
+	.modal__for-quick-ref_container {
+    	display: flex;
+ 	    align-items: center;
+	}
+	.modal__for-quick-ref_container img {
+		width: 150px;
+	}
+	.about_part {
+	    display: flex;
+	    flex-flow: column;
+	    margin: auto;
+	    justify-content: space-around;
+	    align-items: center;
+	    padding: 0 10px;
+	}
+	.modalForm_QTY-AddToCart {
+		margin: 0;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color: #656565; 
+	}
+	.vol-cartqty__wrap input {
+		padding: 0 5px;
+	    width: 55px;
+	    height: 20px;
+	}
+	.modalForm__element_addToCart {
+	    margin: auto;
+	}
+	.modalForm__element_addToCart input {
+		padding: 5px 10px;
+	}
+	.modal__for-quick-ref_question-about-product h4 {
+    	font-size: 14px;
+    }
+    .modal__for-quick-ref_close-btn {
+    	cursor: pointer;
+        width: 14px;
+    	height: 14px;
+    	top: -14px;
+    	right: -16px;
+	    position: absolute;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-image: url(https://www.badboylawnmowerparts.com/v/popUpForDiagram/closeX.png);
+	}
+
+}

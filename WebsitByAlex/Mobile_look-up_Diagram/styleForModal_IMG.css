@@ -1,0 +1,129 @@
+		@import url('styleForAnimationOfMAP.css');
+		@import url('mediaSizesForModal.css');
+		/*slider Style*/
+		@import url('slider/slider__style.css');
+
+		.modal__for-quick-ref {
+		    left: 0;
+		    top: 0;
+		    display: none;
+		    height: 100%;
+		    width: 100vw;
+		    position: fixed;
+		    z-index: 3;
+		}
+		.modal__for-quick-ref_open {
+			display: flex;
+		}
+		.modal__for-quick-ref_bg {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-color: rgba(0, 0, 0, 0.67);
+		}
+		.modal__for-quick-ref_content {
+		    height: auto;
+		    background-color: #fff;
+		    position: relative;
+		    border-radius: 20px;
+		    border: 5px solid #fd6922;
+		}
+
+		.modal__for-quick-ref_header {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.modal__for-quick-ref_img {
+		    padding: 5px;
+		    border-radius: 0 0 0 15px;
+		}
+
+		.modal__for-quick-ref_part-number {
+			margin-left: 5px;
+		}
+
+		.qtyItem__container {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.modal__for-quick-ref_price span {
+			color: black;
+		}
+
+		.qtyItem__container .vol-cartqty__text {
+			margin: auto 5px auto 0;
+		}
+		
+		.modal__for-quick-ref_question-about-product {
+			position: absolute;
+			margin: 15px 0 0;
+		}
+
+		.modal__for-quick-ref_question-about-product a {
+			color: #fd6922;
+			text-decoration: underline;
+		}
+
+		.modal__for-quick-ref_question-about-product h4 {
+			color: white;
+			margin: 0;
+		}
+
+		.modal__for-quick-ref_container {
+			display: flex;
+		}
+
+		.modal__for-quick-ref_container img {
+			max-width: 325px;
+		}
+
+		.conteiner__of-form-add-to-cart {
+			display: flex;
+			flex-flow: column;
+			text-align: center;
+			width: 160px;
+		}
+
+		.modalForm__element_addToCart {
+			font-size: 16px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			line-height: 26px;
+			color: #656565; 
+		}
+
+		.modal__addToCartForm_container {
+			cursor: pointer;
+		}
+
+		/* adjustable lines */
+
+		.border-bottom-line__for-header-modal {
+		    width: 98%;
+    		height: 2px;
+    		background-color: #fd6922;
+		    margin: 0 auto;
+		}
+		/*Volusion Style code*/
+
+		.form-control {
+		    display: block;
+		    width: 100%;
+		    height: 40px;
+		    padding: 9px 16px;
+		    font-size: 14px;
+		    line-height: 1.428571429;
+		    color: #000;
+		    background-color: #fff;
+		    background-image: none;
+		    border: 1px solid #ccc;
+		    border-radius: 0;
+		    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+		    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+		}

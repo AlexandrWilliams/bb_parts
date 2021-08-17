@@ -1,0 +1,62 @@
+@keyframes svgPullse {
+			0%{
+				fill: #f15b29;
+			}
+			50%{
+				fill: #f15b29b8;
+			}
+			100%{
+				fill: #f15b29;
+			}
+		}
+
+		.conteiner__of-map {
+			display: block;
+			position: relative;
+			margin: 0 auto;
+		}
+		.animation {
+			animation: svgPullse 2s infinite;
+		}
+		.svg__layout {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		polygon, circle {
+			fill: #009cff4d;
+			/* stroke: #f15b29; */
+			/*stroke-width:3;*/
+		}
+		polygon:hover {
+			fill: #f5f71980;
+			animation: paused;
+			stroke: #f15b29; 
+			stroke-width:3;
+		}
+
+		circle:hover {
+			fill: #f5f71980;
+			animation: paused;
+			stroke: #f15b29; 
+			stroke-width:3;
+		}
+
+		.img__hover_map-parts_or_description {
+			position: absolute;
+			display: none;
+			width: 150px;
+			border: 3px solid #f15b29;
+		    background-color: linen;
+		    padding: 5px;
+		    border-radius: 20%;
+		}
+		.img__hover_map-parts_or_description img {
+			width: 150px;
+			height: auto;
+			border-radius: 50%;
+		}
+
+		@media screen and (max-width: 480px) {
+			.img__hover_map-parts_or_description{ width: 0;}
+		}
