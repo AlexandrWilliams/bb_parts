@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baggers</title>
+	<script type="text/javascript">
+		function feature() {
+			document.getElementById('feature').setAttribute("class", "scroll1");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function spec() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll1");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function pics() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll1, gallery_baggers");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function faq() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll1");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function video() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll1");
+		}
+	</script>
+	<style type="text/css">
+		
+
+		.bagger_tabs, .right_side_pic, .button_for_baggers {
+			display: block;
+			width: 50%;
+			height: 800px;
+			margin-top: 35px;
+			float: left;
+		}
+
+		.bagger_tabs {
+			overflow-y: auto;
+			height: 500px;
+			width: auto;
+		}
+
+		.right_side_pic {
+			float: right;
+		}
+
+		.clik_on {
+			    border: antiquewhite;
+			    margin-top: 35px;
+			    margin-bottom: 25px;
+			    padding-top: 25px;
+ 	   			padding-bottom: 25px;
+ 	   			padding-left: 35px;
+ 	   			padding-right: 35px;
+ 	   			background: rgba(250, 235, 215, 0.6);
+ 	   			border-width: 2px;
+    			border-style: solid;
+   	 			border-radius: 35px;
+		}
+
+		.clik_on:hover {
+			background-color: #f26522;
+			color: white;
+			border: black;
+			border-width: 2px;
+			border-style: solid;
+		}
+
+		.gallery_baggers {
+			height: 500px;
+			width: auto;
+		}
+
+		.margin_pic {
+			margin-top: 15px;
+		}
+
+		/*right_side*/
+
+		.pic {
+			width: 75%;
+		}
+
+		/*tabs style*/
+		.scroll {
+			display: none;
+		}
+		.scroll1 {
+			display: block;
+		}
+		/*modal window*/
+
+.btn {
+ /* padding: 20px 50px;
+  display: inline-block;
+  background: #EF233C;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;*/
+}
+.btn:hover {
+  background: #f26522;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_baggers {
+  background: white;
+  text-align: center;
+  padding: 40px 80px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay .modal_baggers.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_baggers.open .content {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+.overlay .modal_baggers .content {
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+}
+.overlay .modal_baggers .title {
+  margin-top: 0;
+}
+		/*mobile and other screen*/
+
+@media screen and (max-width: 1550px) {
+	
+}
+@media screen and (max-width: 1270px) {
+	
+}
+@media screen and (max-width: 1199px) {
+	.clik_on {display: inline-block; margin-top: 10px; margin-bottom: 15px;}
+	.gallery_baggers {width: 100%;}
+	.right_side_pic {height: auto;}
+	.bagger_tabs, .right_side_pic, .button_for_baggers {width: 100%;}
+}
+	</style>
+</head>
+<body>
+	<div class="right_side_pic">
+		<p style="font-size: 24px;"> Dump From Seat Attachment </p>
+		<img class="pic" src="https://badboylawnmowerparts.com/v/bagger_info_file/dfsa/dfsa.jpg" alt="Dump From Seat Attachment">
+	</div>
+	<div class="button_for_baggers">
+		<a href="#" class="feature clik_on" onclick="feature()">Feature</a>
+		<a href="#" class="specification clik_on" onclick="spec()">Specification</a>
+		<a href="#" class="pics clik_on" onclick="pics()">Image</a>
+		<a href="#" class="faq_button clik_on" onclick="faq()">FAQs</a>
+		<a href="#" class="video_button clik_on" onclick="video()">Video</a>
+	<div class="bagger_tabs">
+		<div class="css-panes">
+	<div class="scroll1" id="feature"><!--add class "scroll" to div if content exceeds the pane dimensions-->
+		<p><!--Tab one Features content-->
+        	<ul class="tab_font">
+				<li>Attachment converts either 3 Bag 12 Bu. or 2 Bag 8 Bu. catchers into dump from seat systems</li><br />
+                <li>The dump from seat attachment slides in place of bags allowing the operator to quickly alternate between bags and hopper</li><br />
+       	  	  	<li>Dump from seat attachment is electrically dumped from the operator's seat via toggle switch, the switch powers electric motors quickly opening the gate and allowing for a quick complete dump</li><br />
+				<li>Steel frame provides the attachment with maximum durability</li><br />
+			</ul>
+		</p>			
+	</div>
+</div>
+		<div class="css-panes">
+	<div class="scroll" id="specification"><!--add class "scroll" to div if content exceeds the pane dimensions-->
+		<p><!--Tab two Specifications content-->
+			<span class="a">Dump From Seat Attachment Specifications</span>
+            <div class="pane_box">Electrical for 2/3 Bag Systems</div><br /><br /><br />
+            	<span class="pane_text">20,000 cycle tested dual motors</span><br />
+                <span class="pane_text">Quick disconnect electrical line</span><br />
+                <span class="pane_text">30A inline fuse</span><br />
+        	<div class="pane_box">Attatchment for 2 Bag Systems</div></br></br></br>
+        		<span class="pane_text">Width - &nbsp;&nbsp;40&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;18&quot;</span></br>
+                <span class="pane_text">Depth - &nbsp;&nbsp;18&quot;</span></br>
+                <span class="pane_text">Capacity - &nbsp;&nbsp;7 Bushel by volume</span></br>
+        		<span class="pane_text">Fabrication - &nbsp;&nbsp;10 and 12 gauge steel construction</span></br>
+            <div class="pane_box">Attatchment for 3 Bag Systems</div></br></br></br>
+            	<span class="pane_text">Width - &nbsp;&nbsp;59&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;18&quot;</span></br>
+                <span class="pane_text">Depth - &nbsp;&nbsp;18&quot;</span></br>
+                <span class="pane_text">Capacity - &nbsp;&nbsp;9 Bushel by volume</span></br>
+        		<span class="pane_text">Fabrication - &nbsp;&nbsp;10 and 12 gauge steel construction</span></br>
+        </p>
+	</div>
+	<div class="scroll" id="pics">
+		<p><!--Tab three Pics content-->
+        <span class="a">Dump From Seat Attachment Product Pictures</span><br /><br />
+        
+        <img class="margin_pic" src="https://badboylawnmowerparts.com/v/bagger_info_file/dfsa/dfsa1.jpg" alt="Dump From Seat Attachment" />
+        
+        <img class="margin_pic" src="https://badboylawnmowerparts.com/v/bagger_info_file/dfsa/dfsa2.jpg" alt="Dump From Seat Attachment" />
+        
+        <img class="margin_pic" src="https://badboylawnmowerparts.com/v/bagger_info_file/dfsa/dfsa3.jpg" alt="Dump From Seat Attachment" />
+
+        </p>
+    </div>
+    <div class="scroll" id="faq">
+		<p><!--Tab four FAQ's content-->
+		<span class="a">Frequently Asked Questions</span></br></br>
+        <span class="c">FAQ's Coming Soon!</span>     
+		</p>
+	</div>
+	<div class="scroll" id="video">
+		<p><!--Tab five Video content-->
+        <span class="a">Dump From Seat Attachment Product Videos</span><br /><br />
+      	<iframe width="525" height="275" src="https://www.youtube.com/embed/EquZcYw7AAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        </p>
+	</div>
+</div>
+	</div>
+</div>
+
+ <!-- <a href="#" class='btn open-modal' data-modal="#modal1">Open Modal</a>-->
+<!--*************** This is modal window content ************-->
+<div class='modal_baggers' id='modal1'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/gas_cylinder.jpg">
+		<p>
+			Gas Cylinder keep hood completely open when unloading and tightly shut 					during operation
+		</p>
+		<a class='btn close-modal' data-modal="#modal1" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal2'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/deflector.jpg">
+		<p>
+			Internal deflector directs debris to uniformly fill bags from left to right	
+		</p>
+		<a class='btn close-modal' data-modal="#modal2" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal3'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/blower_open.jpg">
+		<p>
+			Blower has all steel housing and impeller
+		</p>
+		<a class='btn close-modal' data-modal="#modal3" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal4'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/bearings.jpg">
+		<p >
+			greasable bearings for Zero Turn Mowers	
+		</p>
+		<a class='btn close-modal' data-modal="#modal4" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal5'>
+	<div class='content'>
+		
+		<img  src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/hsmc_rearbag_pan.jpg">
+		<p>
+			Bags have vaccuum formed pan with recessed metal handle
+		</p>
+		<a class='btn close-modal' data-modal="#modal5" href="#">X</a>
+	</div>	
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+<script  src="https://badboylawnmowerparts.com/v/bagger_info_file/index.js"></script>
+
+</body>
+</html>
+</head>

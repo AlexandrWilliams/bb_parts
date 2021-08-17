@@ -1,0 +1,1270 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- include the Tools -->
+<script src="../js/jquery.tools.min.js" type="text/javascript"></script>
+<script src="../js/menu.js" type="text/javascript"></script>
+<script src="tabs.js" type="text/javascript"></script>
+<script src="../js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<!-- tab styling -->	
+<style type="text/css">/* root element for tabs  */
+ul.css-tabs {  
+    margin:0 !important; 
+    padding:0;
+    height:30px;
+    border-bottom:1px solid #53a1df;
+}
+/* single tab */
+ul.css-tabs li {  
+    float:left;  
+    padding:0; 
+    margin:0;  
+    list-style-type:none;
+}
+/* link inside the tab. uses a background image */
+ul.css-tabs a { 
+    float:left;
+    font-size:15px;
+    font-family: Verdana, Geneva, sans-serif;
+    display:block;
+    padding:5px 30px;   
+    text-decoration:none;
+    border:1px solid #53a1df;   
+    border-bottom:0px;
+    -moz-border-radius: 3px 3px 0 0;  
+    -webkit-border-radius: 3px 3px 0 0;  
+    border-radius: 3px 3px 0 0;
+    height:18px;
+    background-color: #E8ECFF; /*Color of tab unselected*/
+    color: #000;
+    margin-right:2px;
+    position:relative;
+    top:1px;    
+    outline:0;
+}
+ul.css-tabs a:hover {
+    background-color: #66BAFF; /*Color of tab during mouse hover*/
+    color:#fff;
+}   
+/* selected tab */
+ul.css-tabs a.current {
+    background-color:#fff; /*Color of tab that's selected - should match color of display pane*/
+    border-bottom:1px solid #fff;   
+    color:#000; 
+    cursor:default;
+    -moz-border-radius: 3px 3px 0 0;  
+    -webkit-border-radius: 3px 3px 0 0;  
+    border-radius: 3px 3px 0 0;
+}
+/* tab pane */
+.css-panes div {
+    display:none;
+    border:1px solid #53a1df;
+    border-width:0 1px 1px 1px;
+    -moz-border-radius: 0 0 5px 5px;  
+    -webkit-border-radius: 0 0 5px 5px;  
+    border-radius: 0 0 5px 5px;
+    height: 300px;
+    padding: 5px 0 0 5px;
+    background-color:#fff;
+}
+/*This is for a div within a tab pane, used to overide parent settings*/
+.css-panes .pane_box {
+    display: block;
+    float: left;
+    height: 22px;
+    width: 600px;
+    box-shadow: none;
+    padding: none;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-bottom-width: medium;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-color: #333;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    vertical-align: bottom;
+}
+.tab_font { /*Use to style text in the Features tab on the Humboldt product pages*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    list-style: none;
+    list-style-image: url(../img/list_style.png);
+}
+.tab_font_a { /*Use to style text in the FAQs tab on the Humboldt product pages*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    list-style-image: url(../img/list_style_a.png);
+    margin-left: 60px;
+}
+#tab_titles {
+    width: 933px;
+    height: 30px;
+    background-color: #fff;
+    border-right-width: thin;
+    border-left-width: thin;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #53a1df;
+    border-left-color: #53a1df;
+}
+#part {
+    width: 100px;
+    float: left;
+    margin-left: 33px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    color: #0071bc;
+}
+#type {
+    width: 220px;
+    float: left;
+    margin-left: 82px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    color: #0071bc;
+}
+#msrp {
+    width: 90px;
+    float: left;
+    margin-left: 280px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    color: #0071bc;
+}
+
+/*Styles for the tables*/
+
+table {
+    width: 935;
+    border: 0;
+    margin: -15px 0 0 0px;
+}
+td {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+</style>
+<style type="text/css">body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: repeat-x;
+    background-color: #53a1df;
+    margin: 0 auto;
+}
+#header {
+    width: 980px;
+    height: 75px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+#header_logo {
+    width: 645px;
+    height: 75px;
+    float: left;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+}
+#dealer-login {
+    width: 140px;
+    height: 20px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0071bc;
+    font-size: 16px;
+    margin-top: 44px;
+}
+#view-cart {
+    width: 180px;
+    height: 30px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0071bc;
+    font-size: 16px;
+    margin-top: 35px;
+}
+#shopping_cart_box {
+    background-color: #d5c588;
+}
+
+#menu {
+    width: 980px;
+    height: 35px;
+    float: left;
+}
+#menu_store {
+    width: 980px;
+    height: 35px;
+    margin: 0 auto;
+}
+#rb_menu {
+    width: 980px;
+    height: 35px;
+    float: left;
+}
+#wrapper_home {
+    width: 980px;
+    height: 750px;
+    background-image:url(../img/content_bg.jpg);
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+#wrapper_features {
+    background-image:url(../img/content_bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    width: 980px;
+    height: 920px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+#wrapper_features_a {
+    background-image:url(../img/content_bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    width: 980px;
+    height: 885px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+#rb_wrapper {
+    width: 980px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+#wrapper_info {
+    width: 980px;
+    margin: 0 auto;
+}
+#wrapper_dealers {
+    width: 980px;
+    height: 700px;
+    background-image:url(../img/content_bg.jpg);
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+#wrapper_contact {
+    width: 980px;
+    height: 900px;
+    background-image:url(../img/content_bg.jpg);
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+#wrapper_store {
+    width: 980px;
+    margin: 0 auto;
+    background-image: url(../img/content_bg.jpg);
+    background-color: #FFF;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    z-index: 999;
+}
+#footer_wrap {
+    height: 75px;
+    width: 980px;
+    float: left;
+    background-color: #FFF;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+#rb_header {
+    width: 945px;
+    height: 65px;
+    float: left;
+    padding-right: 35px;
+}
+#rb_bags {
+    width: 980px;
+    float: left;
+    background-image: url(../img/rb_bg.jpg);
+    background-repeat:repeat-y;
+    padding-bottom: 15px;
+}
+.bags {
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.bag_img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.bag_txt {
+    width: 200px;
+    height: 100px;
+    float: right;
+    background-color: #FFF;
+}
+#rb_bottom {
+    width: 980px;
+    height: 100px;
+    float: left;
+    background-color: #FFF;
+    background-image: url(../img/rb_bottom_bg.jpg);
+}
+#rb_footer {
+    width: 980px;
+    height: 60px;
+    float: left;
+    background-color: #FFF;
+}
+#content_home { /*Styles for Content Home Page will be within content_home div*/
+    width: 980px;
+    height: 650px;
+    background-image:url(../img/hpbg3.png);
+    float: left;
+}
+#slideshow {
+    width: 500px;
+    height: 300px;
+    background-color: #FFF;
+    margin-left: 55px;
+}
+#hp_content_a {
+    width: 360px;
+    height: 320px;
+    float: right;
+    margin-right: 35px;
+    padding-right: 20px;
+}
+#logos {
+    width: 335px;
+    height: 200px;
+    margin: 0 auto;
+}
+#hp_content_b {
+    width: 875px;
+    height: 175px;
+    margin-left: 55px;
+    float: left;
+}
+.info-page {
+    width: 940px;
+    background-color: #FFF;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#content_contact { /*Styles for Contact Pages will be within content_contact div*/
+    width: 980px;
+    height: 800px;
+    background-color: #FFF;
+    float: left;
+    background-image: url(../img/content_bg.jpg);
+}
+#contact_response { /*Styles for Contact Pages will be within content_contact div*/
+    width: 980px;
+    height: 570px;
+    background-color: #FFF;
+    background-image: url(../img/content_bg.jpg);
+    padding-top: 125px;
+}
+#response_content {
+    width: 500px;
+    height: 435px;
+    background-image: url(../img/mail.png);
+    float: left;
+}
+#dealer_content { /*Also for our 'Under Construction' page*/
+    width: 540px;
+    height: 475px;
+    background-image: url(../img/dealer_bg_cones.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 200px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#orders-notice {
+    width: 800px; /*For every amount increase to height, subtract that amount from margin-bottom*/
+    float: left;
+    background-color:#FFF;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 270px;
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-top: 20px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    padding-right: 10px;
+}
+#sales_content {
+    width: 540px;
+    height: 475px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 200px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#content_store { /*Styles for Contact Pages will be within content_contact div*/
+    width: 980px;
+    padding-top: 25px;
+    background-image: url(../img/store_bg.jpg);
+    background-repeat: repeat-y;
+}
+#shopping_cart_box {
+    width: 750px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+/*Styles for feature pages will be in the feature_img div and the tab system*/
+#feature_content {
+    width: 980px;
+    height: 470px;
+}
+#feature_content_left {
+    width: 475px;
+    height: 404px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+#feature_img {
+    width: 475px;
+    height: 360px;
+    margin-bottom: 20px;
+    border: 2px solid #690;
+}
+#tab_label {
+    float: left;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    color: #006AD5;
+}
+#logo {
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+#feature_text {
+    width: 350px;
+    height: 275px;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    float: left;
+    background-image: url(../img/feature_text2.png);
+    background-repeat: no-repeat;
+}
+#hsmc_feature_text {
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    background-image: url(../img/hsmc_feature2.png);
+    padding-right: 15px;
+    background-repeat: no-repeat;
+}
+.a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+.b {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+.c {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #235FA0;
+}
+.d  {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+.e {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+.f {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    color: #FFF;
+}
+.g {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+}
+.info-text {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.pane_text {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+}
+.pane_text_q {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    color: #0071bc;
+}
+.hp_welcome {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+    /*filter: glow(color=black,strength=2);*/
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.hp_madeby {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 15px;
+}
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+    filter: glow(color=black,strength=2);
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 45px;
+    margin-left: 28px;
+}
+h2 {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+    filter: glow(color=black,strength=2);
+    margin-left: 25px;
+}
+#tab_container {
+    width: 935px;
+    height: 350px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.scroll {
+    overflow: scroll;
+}
+    
+.tab_list {
+    list-style-type: none;
+}
+
+/*Menu Styles*/
+#nav, #nav ul{
+margin:0;
+padding:0;
+list-style-type:none;
+list-style-position:outside;
+position:relative;
+line-height: 35px;
+z-index: 999;
+}
+
+#nav a{
+display:block;
+padding:0px 5px;
+border:1px solid #86a143;
+color: #FFF;
+text-decoration:none;
+background-color: #690;
+width: 128px;
+font-family:Verdana, Geneva, sans-serif;
+font-size: 13px;
+}
+
+#nav a:hover{
+background-color:#fff;
+color:#333;
+}
+
+#nav li{
+float:left;
+position:relative;
+}
+
+#nav ul {
+position:absolute;
+display:none;
+width: 12em;
+top: 35px;
+}
+
+#nav li ul a{
+width: 200px;
+height:auto;
+float:left;
+}
+
+#nav ul ul{
+top:auto;
+}   
+
+#nav li ul ul {
+left:12em;
+margin:0px 0 0 10px;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul{
+display:none;
+}
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul{
+display:block;
+}
+
+/*Contact Form*/
+
+#form_header {
+    width: 350px;
+    float: left;
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 75px;
+}
+#contact_form {
+    width: 700px;
+    height: auto;
+    float: left;
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 120px;
+    padding: 10px;
+    background-color: #FFF;
+}
+form {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+}
+#spacer {
+    width: 980px;
+    height: 40px;
+    float:left;
+}
+#spacer_rb {
+    width: 940px;
+    height: 55px;
+    float: left;
+    padding: 5px 15px 0 25px;
+}
+.footer {
+    width: 250px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #235FA0;
+}
+.footer-b {
+    width: 175px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #235FA0;
+}
+.footer-c {
+    width: 175px;
+    height: 55px;
+    float: left;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-left: 70px;
+
+}
+.footer_store {
+    width: 275px;
+    height: 60px;
+    float: left;
+    margin-left: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #235FA0;
+    margin-top: 35px;
+}
+#info-footer_wrap {
+    width: 980px;
+    height: 60px;
+    margin-left: -20px;
+}
+a:link {
+    text-decoration: none;
+    color: #669900;
+}
+a:visited {
+    text-decoration: none;
+    color: #669900;
+}
+a:hover {
+    text-decoration: none;
+    color: #333;
+}
+a:active {
+    text-decoration: none;
+}
+img {
+    border:0;
+}
+</style>
+<style type="text/css">/* ------------------------------------------------------------------------
+    This you can edit.
+------------------------------------------------------------------------- */
+
+    /* ----------------------------------
+        Default Theme
+    ----------------------------------- */
+
+    div.pp_default .pp_top,
+    div.pp_default .pp_top .pp_middle,
+    div.pp_default .pp_top .pp_left,
+    div.pp_default .pp_top .pp_right,
+    div.pp_default .pp_bottom,
+    div.pp_default .pp_bottom .pp_left,
+    div.pp_default .pp_bottom .pp_middle,
+    div.pp_default .pp_bottom .pp_right { height: 13px; }
+    
+    div.pp_default .pp_top .pp_left { background: url(../img/sprite.png) -78px -93px no-repeat; } /* Top left corner */
+    div.pp_default .pp_top .pp_middle { background: url(../img/sprite_x.png) top left repeat-x; } /* Top pattern/color */
+    div.pp_default .pp_top .pp_right { background: url(../img/sprite.png) -112px -93px no-repeat; } /* Top right corner */
+    
+    div.pp_default .pp_content .ppt { color: #f8f8f8; }
+    div.pp_default .pp_content_container .pp_left { background: url(../img/sprite_y.png) -7px 0 repeat-y; padding-left: 13px; }
+    div.pp_default .pp_content_container .pp_right { background: url(../img/sprite_y.png) top right repeat-y; padding-right: 13px; }
+    div.pp_default .pp_content { background-color: #fff; } /* Content background */
+    div.pp_default .pp_next:hover { background: url(../img/sprite_next.png) center right  no-repeat; cursor: pointer; } /* Next button */
+    div.pp_default .pp_previous:hover { background: url(../img/sprite_prev.png) center left no-repeat; cursor: pointer; } /* Previous button */
+    div.pp_default .pp_expand { background: url(../img/sprite.png) 0 -29px no-repeat; cursor: pointer; width: 28px; height: 28px; } /* Expand button */
+    div.pp_default .pp_expand:hover { background: url(../img/sprite.png) 0 -56px no-repeat; cursor: pointer; } /* Expand button hover */
+    div.pp_default .pp_contract { background: url(../img/sprite.png) 0 -84px no-repeat; cursor: pointer; width: 28px; height: 28px; } /* Contract button */
+    div.pp_default .pp_contract:hover { background: url(../img/sprite.png) 0 -113px no-repeat; cursor: pointer; } /* Contract button hover */
+    div.pp_default .pp_close { width: 30px; height: 30px; background: url(../img/sprite.png) 2px 1px no-repeat; cursor: pointer; } /* Close button */
+    div.pp_default #pp_full_res .pp_inline { color: #000; } 
+    div.pp_default .pp_gallery ul li a { background: url(../img/default_thumb.png) center center #f8f8f8; border:1px solid #aaa; }
+    div.pp_default .pp_gallery ul li a:hover,
+    div.pp_default .pp_gallery ul li.selected a { border-color: #fff; }
+    div.pp_default .pp_social { margin-top: 7px; }
+
+    div.pp_default .pp_gallery a.pp_arrow_previous,
+    div.pp_default .pp_gallery a.pp_arrow_next { position: static; left: auto; }
+    div.pp_default .pp_nav .pp_play,
+    div.pp_default .pp_nav .pp_pause { background: url(../img/sprite.png) -51px 1px no-repeat; height:30px; width:30px; }
+    div.pp_default .pp_nav .pp_pause { background-position: -51px -29px; }
+    div.pp_default .pp_details { position: relative; }
+    div.pp_default a.pp_arrow_previous,
+    div.pp_default a.pp_arrow_next { background: url(../img/sprite.png) -31px -3px no-repeat; height: 20px; margin: 4px 0 0 0; width: 20px; }
+    div.pp_default a.pp_arrow_next { left: 52px; background-position: -82px -3px; } /* The next arrow in the bottom nav */
+    div.pp_default .pp_content_container .pp_details { margin-top: 5px; font-family: Verdana, Geneva, sans-serif;}
+    div.pp_default .pp_nav { clear: none; height: 30px; width: 110px; position: relative; }
+    div.pp_default .pp_nav .currentTextHolder{ font-family: Georgia; font-style: italic; color:#999; font-size: 11px; left: 75px; line-height: 25px; margin: 0; padding: 0 0 0 10px; position: absolute; top: 2px; }
+    
+    div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover { opacity:0.7; }
+
+    div.pp_default .pp_description{ font-size: 12px; line-height: 14px; margin: 5px 50px 5px 0; }
+
+    div.pp_default .pp_bottom .pp_left { background: url(../img/sprite.png) -78px -127px no-repeat; } /* Bottom left corner */
+    div.pp_default .pp_bottom .pp_middle { background: url(../img/sprite_x.png) bottom left repeat-x; } /* Bottom pattern/color */
+    div.pp_default .pp_bottom .pp_right { background: url(../img/sprite.png) -112px -127px no-repeat; } /* Bottom right corner */
+
+    div.pp_default .pp_loaderIcon { background: url(../img/loader.gif) center center no-repeat; } /* Loader icon */
+
+    
+
+/* ------------------------------------------------------------------------
+    DO NOT CHANGE
+------------------------------------------------------------------------- */
+
+    div.pp_pic_holder a:focus { outline:none; }
+
+    div.pp_overlay {
+        background: #000;
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9500;
+    }
+    
+    div.pp_pic_holder {
+        display: none;
+        position: absolute;
+        width: 100px;
+        z-index: 10000;
+    }
+
+        
+        .pp_top {
+            height: 20px;
+            position: relative;
+        }
+            * html .pp_top { padding: 0 20px; }
+        
+            .pp_top .pp_left {
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 20px;
+            }
+            .pp_top .pp_middle {
+                height: 20px;
+                left: 20px;
+                position: absolute;
+                right: 20px;
+            }
+                * html .pp_top .pp_middle {
+                    left: 0;
+                    position: static;
+                }
+            
+            .pp_top .pp_right {
+                height: 20px;
+                left: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 20px;
+            }
+        
+        .pp_content { height: 40px; min-width: 40px; }
+        * html .pp_content { width: 40px; }
+        
+        .pp_fade { display: none; }
+        
+        .pp_content_container {
+            position: relative;
+            text-align: left;
+            width: 100%;
+        }
+        
+            .pp_content_container .pp_left { padding-left: 20px; }
+            .pp_content_container .pp_right { padding-right: 20px; }
+        
+            .pp_content_container .pp_details {
+                float: left;
+                margin: 10px 0 2px 0;
+            }
+                .pp_description {
+                    display: none;
+                    margin: 0;
+                }
+                
+                .pp_social { float: left; margin: 0; display: none; }
+                .pp_social .facebook { float: left; margin-left: 5px; width: 55px; overflow: hidden; }
+                .pp_social .twitter { float: left; }
+                
+                .pp_nav {
+                    clear: right;
+                    float: left;
+                    margin: 3px 10px 0 0;
+                }
+                
+                    .pp_nav p {
+                        float: left;
+                        margin: 2px 4px;
+                        white-space: nowrap;
+                    }
+                    
+                    .pp_nav .pp_play,
+                    .pp_nav .pp_pause {
+                        float: left;
+                        margin-right: 4px;
+                        text-indent: -10000px;
+                    }
+                
+                    a.pp_arrow_previous,
+                    a.pp_arrow_next {
+                        display: block;
+                        float: left;
+                        height: 15px;
+                        margin-top: 3px;
+                        overflow: hidden;
+                        text-indent: -10000px;
+                        width: 14px;
+                    }
+        
+        .pp_hoverContainer {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2000;
+        }
+        
+        .pp_gallery {
+            display: none;
+            left: 50%;
+            margin-top: -50px;
+            position: absolute;
+            z-index: 10000;
+        }
+        
+            .pp_gallery div {
+                float: left;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .pp_gallery ul {
+                float: left;
+                height: 35px;
+                margin: 0 0 0 5px;
+                padding: 0;
+                position: relative;
+                white-space: nowrap;
+            }
+            
+            .pp_gallery ul a {
+                border: 1px #000 solid;
+                border: 1px rgba(0,0,0,0.5) solid;
+                display: block;
+                float: left;
+                height: 33px;
+                overflow: hidden;
+            }
+            
+            .pp_gallery ul a:hover,
+            .pp_gallery li.selected a { border-color: #fff; }
+            
+            .pp_gallery ul a img { border: 0; }
+            
+            .pp_gallery li {
+                display: block;
+                float: left;
+                margin: 0 5px 0 0;
+                padding: 0;
+            }
+            
+            .pp_gallery li.default a {
+                background: url(../images/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;
+                display: block;
+                height: 33px;
+                width: 50px;
+            }
+            
+            .pp_gallery li.default a img { display: none; }
+            
+            .pp_gallery .pp_arrow_previous,
+            .pp_gallery .pp_arrow_next {
+                margin-top: 7px !important;
+            }
+        
+        a.pp_next {
+            background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+            display: block;
+            float: right;
+            height: 100%;
+            text-indent: -10000px;
+            width: 49%;
+        }
+            
+        a.pp_previous {
+            background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+            display: block;
+            float: left;
+            height: 100%;
+            text-indent: -10000px;
+            width: 49%;
+        }
+        
+        a.pp_expand,
+        a.pp_contract {
+            cursor: pointer;
+            display: none;
+            height: 20px;   
+            position: absolute;
+            right: 30px;
+            text-indent: -10000px;
+            top: 10px;
+            width: 20px;
+            z-index: 20000;
+        }
+            
+        a.pp_close {
+            position: absolute; right: 0; top: 0; 
+            display: block;
+            line-height:22px;
+            text-indent: -10000px;
+        }
+        
+        .pp_bottom {
+            height: 20px;
+            position: relative;
+        }
+            * html .pp_bottom { padding: 0 20px; }
+            
+            .pp_bottom .pp_left {
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 20px;
+            }
+            .pp_bottom .pp_middle {
+                height: 20px;
+                left: 20px;
+                position: absolute;
+                right: 20px;
+            }
+                * html .pp_bottom .pp_middle {
+                    left: 0;
+                    position: static;
+                }
+                
+            .pp_bottom .pp_right {
+                height: 20px;
+                left: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 20px;
+            }
+        
+        .pp_loaderIcon {
+            display: block;
+            height: 24px;
+            left: 50%;
+            margin: -12px 0 0 -12px;
+            position: absolute;
+            top: 50%;
+            width: 24px;
+        }
+        
+        #pp_full_res {
+            line-height: 1 !important;
+        }
+        
+            #pp_full_res .pp_inline {
+                text-align: left;
+            }
+            
+                #pp_full_res .pp_inline p { margin: 0 0 15px 0; }
+    
+        div.ppt {
+            color: #fff;
+            display: none;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 17px;
+            margin: 0 0 5px 15px;
+            z-index: 9999;
+        }
+        
+        /*Added to fix long descriptions below the image*/
+    
+    .pp_description {
+    background-color:#f8f8f8; 
+    opacity:0.8; 
+    height:40px;
+    padding: 5px 5px 5px 5px;
+    position:absolute;
+    top:-30px;
+    width:90%;
+    z-index:2001;
+}
+.pp_gallery {
+    margin-top: 5px !important;
+}</style>
+<title>Grass Catchers USA</title>
+</head>
+<body>
+<div id="wrapper_features_a">
+
+    
+    <!--This is the content area for a hsmc products features page-->
+    
+<div id="feature_content">
+	<div id="feature_content_left">
+    	<div id="feature_img"><img src="../img/3bag12bu.jpg" width="475" height="360" alt="3 Bag 12 Bu." /></div><!--Image size should be (Width 475px, Height 360px)-->
+    	<div id="tab_label"><!--Description of what the tab choices are-->Product Features</div>
+    </div><!--This is the feature_content_left end-->
+    <div id="logo"><img src="../img/logos/hsmc.png" width="300" height="100" alt="Humboldt Specialty" /></div>        
+    <div id="hsmc_feature_text"><!--This is the text for HSMC products, Price and name-->
+    	<p class="b">3 Bag 12 Bu. Rear Collection System</p>
+        <p>Go to &lsquo;My Mower&rsquo; in the menu and select your mower brand and model for a list of pricing and availability.</p>
+    </div><!--This is the feature text end-->
+</div><!--This is the feature image end-->
+<div id="tab_container">
+<!-- tabs -->
+<ul class="css-tabs">
+	<li><a href="#">Features</a></li>
+	<li><a href="#">Specifications</a></li>
+	<li><a href="#">Pics</a></li>
+    <li><a href="#">FAQs</a></li>
+    <li><a href="#">Video</a></li>
+</ul>
+<!-- panes -->
+<div class="css-panes">
+	<div class="scroll"><!--add class "scroll" to div if content exceeds the pane dimensions-->
+		<p><!--Tab one Features content-->
+        	<ul class="tab_font">
+				<li>Entire System is &quot;Quick-on Quick-off&quot;</li><br />
+                <li>Low profile leaves the operator with an unobstructed rear view</li><br />
+       	  	  	<li>Catcher is within the mower width allowing for greater maneuverability & more trailer space</li><br />
+				<li>Fabric Hood allows maximum air release, increasing blower performance</li><br />
+				<li>6&quot; Hose allows greater air flow, reduces clogging, and provides greater bag compaction</li><br />
+				<li><a href="../img/gas_cylinder.jpg" rel="prettyPhoto" title="">Gas Cylinders</a> keep hood completely open when unloading and tightly shut 					during operation</li><br />
+    	    	<li><a href="../img/deflector.jpg" rel="prettyPhoto" title="">Internal deflector</a> directs debris to uniformly fill bags from left to right</li><br />
+				<li>Reduced blower width allows for greater maneuverability</li><br />
+				<li><a href="../img/blower_open.jpg" rel="prettyPhoto" title="">Blower</a> has all steel housing and impeller</li><br />
+				<li>Easy accessable and <a href="../img/bearings.jpg" rel="prettyPhoto" title="">greasable bearings</a> for Zero Turn Mowers</li><br />
+                <li>PTO Blowers have replaceable bearings</li><br/>
+           	  	<li><a href="../img/hsmc_rearbag_pan.jpg" rel="prettyPhoto" title="">Bags</a> have vaccuum formed pan with recessed metal handle</li><br />			   				<br />
+            </ul>
+		</p>			
+	</div>
+	<div class="scroll">
+		<p><!--Tab two Specifications content-->
+			<span class="a">3 Bag 12 Bu. Specifications</span>
+        	<div class="pane_box">Catcher System</div></br></br></br>
+        		<span class="pane_text">Width - &nbsp;&nbsp;57&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;33&quot;</span></br>
+                <span class="pane_text">Depth - &nbsp;&nbsp;23&quot;</span></br>
+                <span class="pane_text">Capacity - &nbsp;&nbsp;12 Bushel by volume</span></br>
+        		<span class="pane_text">Fabrication - &nbsp;&nbsp;10 and 12 gauge steel construction</span></br>
+                <span class="pane_text">Loaded bag weight - &nbsp;&nbsp;60 lbs. (depending on conditions)</span></br>
+            <div class="pane_box">Blower/Zero Turn Mowers</div></br></br></br>
+            	<span class="pane_text">Width - &nbsp;&nbsp;11&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;20&quot;</span></br>
+                <span class="pane_text">Length - &nbsp;&nbsp;28.8&quot;</span></br>
+                <span class="pane_text">Housing Fabrication - &nbsp;&nbsp;12 gauge steel</span></br>
+        		<span class="pane_text">Impeller Fabrication - &nbsp;&nbsp;7 gauge steel blades, 1&quot; shaft</span></br>
+                <span class="pane_text">Greasable flange bearings</span></br>
+                <span class="pane_text">Weight - &nbsp;&nbsp;82 lbs.</span></br>
+            <div class="pane_box">PTO Blower/Compact Tractors</div></br></br></br>
+            	<span class="pane_text">Width - &nbsp;&nbsp;43&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;34&quot;</span></br>
+                <span class="pane_text">Depth - &nbsp;&nbsp;16&quot;</span></br>
+                <span class="pane_text">Housing Fabrication - &nbsp;&nbsp;12 gauge steel</span></br>
+        		<span class="pane_text">Impeller Fabrication - &nbsp;&nbsp;7 gauge steel blades, 1&quot; shaft</span></br>
+                <span class="pane_text">Replaceable bearings</span></br></br></br>
+    	</p>
+    </div>
+	<div>
+		<p><!--Tab three Pics content-->
+        <span class="a">3 Bag 12 Bu. Product Pictures</span><br /><br />
+        <a href="../cs_img/3bag1_lg.jpg" rel="prettyPhoto[pp_gal]" title="">
+        <img src="../cs_img/3bag1_sm.jpg" alt="" /></a>
+        <a href="../cs_img/3bag2_lg.jpg" rel="prettyPhoto[pp_gal]" title="">
+        <img src="../cs_img/3bag2_sm.jpg" alt="" /></a>
+        <a href="../cs_img/3bag3_lg.jpg" rel="prettyPhoto[pp_gal]" title="">
+        <img src="../cs_img/3bag3_sm.jpg" alt="" /></a>
+        <a href="../cs_img/3bag4_lg.jpg" rel="prettyPhoto[pp_gal]" title="">
+        <img src="../cs_img/3bag4_sm.jpg" alt="" /></a>
+        <a href="../cs_img/3bag5_lg.jpg" rel="prettyPhoto[pp_gal]" title="">
+        <img src="../cs_img/3bag5_sm.jpg" alt="" /></a>
+        </p>
+    </div>
+    <div class="scroll">
+		<p><!--Tab four FAQ's content-->
+		<span class="a">Frequently Asked Questions</span></br></br>
+        <span class="pane_text_q">How much weight does the bagger add to the mower?</span></br>
+        	<li class="tab_font_a">Full bags weigh aprroximately 60 lbs. and the rear end weighs approximately 80 lbs.</li></br>
+        <span class="pane_text_q">How long does it take to install the bagging system?</span></br></br>
+        	<li class="tab_font_a">Initial installation takes about an hour, after that, it takes only minutes to remove or reinstall the system.</li></br>
+        <span class="pane_text_q">We get a lot of rain in my area, how well does the catcher work with wet grass or leaves?</span></br></br>
+        	<li class="tab_font_a">Wet grass and leaves are heavy.  Raise the deck slightly higher and travel slower. Wet clippings add significant</br> weight to the bags.</li></br>
+        <span class="pane_text_q">Will the bagger block my rear view?</span></br></br>
+        	<li class="tab_font_a">We use a low profile design that allows for good rear visiblility.</li></br>
+        <span class="pane_text_q">How much does the system add to the width of my mower?</span></br></br>
+        	<li class="tab_font_a">The blower will add 11&quot; to the deck and the bagger is designed to stay inside of the travel of the mower.</li></br>
+        <span class="pane_text_q">Can I collect leaves with this bagger system?</span></br></br>
+        	<li class="tab_font_a">Yes, but we recommend you mulch the leaves first for more efficient bagging.</li></br></br>        
+		</p>
+	</div>
+    <div>
+		<p><!--Tab five Video content-->
+        <span class="a">3 Bag 12 Bu. Product Videos</span><br /><br />
+		<a href="https://youtu.be/kfhxeUdWR0o?rel=0" rel="prettyPhoto" title="">
+        <img src="../img/3bag_vid.jpg" alt="3 Bag Rear Catcher" /></a>&nbsp;&nbsp;
+        <a href="https://youtu.be/bpF31l0Tde4?rel=0" rel="prettyPhoto" title="">
+        <img src="../img/3pt-install_vid.jpg" alt="3 Point Installation" /></a><br /><br />
+        </p>
+	</div>
+</div>
+<!-- activate tabs with JavaScript -->
+<script>
+$(function() {
+	// :first selector is optional if you have only one tabs on the page
+	$(".css-tabs:first").tabs(".css-panes:first > div");
+});
+</script>
+
+<!-------------------------------This activates the prettyPhoto scripting--------------------------------->
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+</body>
+</html>

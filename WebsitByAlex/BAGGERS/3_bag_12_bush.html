@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baggers</title>
+	<script type="text/javascript">
+		function feature() {
+			document.getElementById('feature').setAttribute("class", "scroll1");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function spec() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll1");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function pics() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll1, gallery_baggers");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function faq() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll1");
+			document.getElementById('video').setAttribute("class", "scroll");
+		}
+		function video() {
+			document.getElementById('feature').setAttribute("class", "scroll");
+			document.getElementById('specification').setAttribute("class", "scroll");
+			document.getElementById('pics').setAttribute("class", "scroll");
+			document.getElementById('faq').setAttribute("class", "scroll");
+			document.getElementById('video').setAttribute("class", "scroll1");
+		}
+	</script>
+	<style type="text/css">
+		.bagger_tabs, .right_side_pic, .button_for_baggers {
+			display: block;
+			width: 50%;
+			height: 800px;
+			margin-top: 35px;
+			float: left;
+		}
+
+		.clik_on {
+			    border: antiquewhite;
+			    margin-top: 35px;
+			    margin-bottom: 25px;
+			    padding-top: 25px;
+ 	   			padding-bottom: 25px;
+ 	   			padding-left: 35px;
+ 	   			padding-right: 35px;
+ 	   			background: rgba(250, 235, 215, 0.6);
+ 	   			border-width: 2px;
+    			border-style: solid;
+   	 			border-radius: 35px;
+		}
+
+		.clik_on:hover {
+			background-color: #dc1029;
+			color: white;
+			border: black;
+			border-width: 2px;
+			border-style: solid;
+		}
+
+		.gallery_baggers {
+			overflow-x: scroll;
+			height: 500px;
+			width: 600px;
+		}
+
+		/*right_side*/
+
+		.pic {
+			width: 75%;
+		}
+
+		/*tabs style*/
+		.scroll {
+			display: none;
+		}
+		.scroll1 {
+			display: block;
+		}
+		/*modal window*/
+
+.btn {
+ /* padding: 20px 50px;
+  display: inline-block;
+  background: #EF233C;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;*/
+}
+.btn:hover {
+  background: #dc1029;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_baggers {
+  background: white;
+  text-align: center;
+  padding: 40px 80px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay .modal_baggers.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_baggers.open .content {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+.overlay .modal_baggers .content {
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+}
+.overlay .modal_baggers .title {
+  margin-top: 0;
+}
+
+	</style>
+</head>
+<body>
+	<div class="button_for_baggers">
+		<a href="#" class="feature clik_on" onclick="feature()">Feature</a>
+		<a href="#" class="specification clik_on" onclick="spec()">Specification</a>
+		<a href="#" class="pics clik_on" onclick="pics()">Image</a>
+		<a href="#" class="faq_button clik_on" onclick="faq()">FAQs</a>
+		<a href="#" class="video_button clik_on" onclick="video()">Video</a>
+	<div class="bagger_tabs">
+		<div class="css-panes">
+	<div class="scroll1" id="feature"><!--add class "scroll" to div if content exceeds the pane dimensions-->
+		<p><!--Tab one Features content-->
+        	<ul class="tab_font">
+				<li>Entire System is &quot;Quick-on Quick-off&quot;</li><br />
+                <li>Low profile leaves the operator with an unobstructed rear view</li><br />
+       	  	  	<li>Catcher is within the mower width allowing for greater maneuverability & more trailer space</li><br />
+				<li>Fabric Hood allows maximum air release, increasing blower performance</li><br />
+				<li>6&quot; Hose allows greater air flow, reduces clogging, and provides greater bag compaction</li><br />
+				<li><a href="#" class='btn open-modal' data-modal="#modal1">Gas Cylinder</a>keep hood completely open when unloading and tightly shut 					during operation</li><br />
+    	    	<li><a href="#" class='btn open-modal' data-modal="#modal2">Internal deflector</a> directs debris to uniformly fill bags from left to right</li><br />
+				<li>Reduced blower width allows for greater maneuverability</li><br />
+				<li><a href="#" class='btn open-modal' data-modal="#modal3">Blower</a> has all steel housing and impeller</li><br />
+				<li>Easy accessable and <a href="#" class='btn open-modal' data-modal="#modal4">greasable bearings</a> for Zero Turn Mowers</li><br />
+                <li>PTO Blowers have replaceable bearings</li><br/>
+           	  	<li><a href="#" class='btn open-modal' data-modal="#modal5">Bags</a> have vaccuum formed pan with recessed metal handle</li><br />			   				<br />
+            </ul>
+		</p>			
+	</div>
+</div>
+		<div class="css-panes">
+	<div class="scroll" id="specification"><!--add class "scroll" to div if content exceeds the pane dimensions-->
+		<p><!--Tab two Specifications content-->
+			<span class="a">3 Bag 12 Bu. Specifications</span>
+        	<div class="pane_box">Catcher System</div></br>
+        		<span class="pane_text">Width - &nbsp;&nbsp;57&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;33&quot;</span></br>
+                <span class="pane_text">Depth - &nbsp;&nbsp;23&quot;</span></br>
+                <span class="pane_text">Capacity - &nbsp;&nbsp;12 Bushel by volume</span></br>
+        		<span class="pane_text">Fabrication - &nbsp;&nbsp;10 and 12 gauge steel construction</span></br>
+                <span class="pane_text">Loaded bag weight - &nbsp;&nbsp;60 lbs. (depending on conditions)</span></br></br>
+            <div class="pane_box">Blower/Zero Turn Mowers</div></br>
+            	<span class="pane_text">Width - &nbsp;&nbsp;11&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;20&quot;</span></br>
+                <span class="pane_text">Length - &nbsp;&nbsp;28.8&quot;</span></br>
+                <span class="pane_text">Housing Fabrication - &nbsp;&nbsp;12 gauge steel</span></br>
+        		<span class="pane_text">Impeller Fabrication - &nbsp;&nbsp;7 gauge steel blades, 1&quot; shaft</span></br>
+                <span class="pane_text">Greasable flange bearings</span></br>
+                <span class="pane_text">Weight - &nbsp;&nbsp;82 lbs.</span></br></br>
+            <div class="pane_box">PTO Blower/Compact Tractors</div></br>
+            	<span class="pane_text">Width - &nbsp;&nbsp;43&quot;</span></br>
+        		<span class="pane_text">Height - &nbsp;&nbsp;34&quot;</span></br>
+                <span class="pane_text">Depth - &nbsp;&nbsp;16&quot;</span></br>
+                <span class="pane_text">Housing Fabrication - &nbsp;&nbsp;12 gauge steel</span></br>
+        		<span class="pane_text">Impeller Fabrication - &nbsp;&nbsp;7 gauge steel blades, 1&quot; shaft</span></br></br>
+                <span class="pane_text">Replaceable bearings</span></br>
+    	</p>		
+	</div>
+	<div class="scroll" id="pics">
+		<p><!--Tab three Pics content-->
+        <span class="a">3 Bag 12 Bu. Product Pictures</span><br /><br />
+        
+        <img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/3bag1_lg.jpg" alt="" />
+        
+        <img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/3bag2_lg.jpg" alt="" />
+        
+        <img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/3bag3_lg.jpg" alt="" />
+        
+        <img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/3bag4_lg.jpg" alt="" />
+        
+        <img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/3bag5_lg.jpg" alt="" />
+        </p>
+    </div>
+    <div class="scroll" id="faq">
+		<p><!--Tab four FAQ's content-->
+		<span class="a">Frequently Asked Questions</span></br></br>
+        <span class="pane_text_q">How much weight does the bagger add to the mower?</span></br>
+        	<li class="tab_font_a">Full bags weigh aprroximately 60 lbs. and the rear end weighs approximately 80 lbs.</li></br>
+        <span class="pane_text_q">How long does it take to install the bagging system?</span></br></br>
+        	<li class="tab_font_a">Initial installation takes about an hour, after that, it takes only minutes to remove or reinstall the system.</li></br>
+        <span class="pane_text_q">We get a lot of rain in my area, how well does the catcher work with wet grass or leaves?</span></br></br>
+        	<li class="tab_font_a">Wet grass and leaves are heavy.  Raise the deck slightly higher and travel slower. Wet clippings add significant</br> weight to the bags.</li></br>
+        <span class="pane_text_q">Will the bagger block my rear view?</span></br></br>
+        	<li class="tab_font_a">We use a low profile design that allows for good rear visiblility.</li></br>
+        <span class="pane_text_q">How much does the system add to the width of my mower?</span></br></br>
+        	<li class="tab_font_a">The blower will add 11&quot; to the deck and the bagger is designed to stay inside of the travel of the mower.</li></br>
+        <span class="pane_text_q">Can I collect leaves with this bagger system?</span></br></br>
+        	<li class="tab_font_a">Yes, but we recommend you mulch the leaves first for more efficient bagging.</li></br></br>        
+		</p>
+	</div>
+	<div class="scroll" id="video">
+		<p><!--Tab five Video content-->
+        <span class="a">3 Bag 12 Bu. Product Videos</span><br /><br />
+        <iframe width="525" height="275" src="https://www.youtube.com/embed/kfhxeUdWR0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/><br/>
+        <iframe width="525" height="275" src="https://www.youtube.com/embed/bpF31l0Tde4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+	</div>
+</div>
+	</div>
+</div>
+<div class="right_side_pic">
+	<p style="font-size: 24px;"> 3 Bag 12 Bu. Rear Collection System </p>
+	<img class="pic" src="https://cdn3.volusion.com/mkrpe.efghr/v/vspfiles/photos/12bushel-2.jpg">
+</div>
+<!-- <a href="#" class='btn open-modal' data-modal="#modal1">Open Modal</a>-->
+<!--*************** This is modal window content ************-->
+<div class='modal_baggers' id='modal1'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/gas_cylinder.jpg">
+		<p>
+			Gas Cylinder keep hood completely open when unloading and tightly shut 					during operation
+		</p>
+		<a class='btn close-modal' data-modal="#modal1" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal2'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/deflector.jpg">
+		<p>
+			Internal deflector directs debris to uniformly fill bags from left to right	
+		</p>
+		<a class='btn close-modal' data-modal="#modal2" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal3'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/blower_open.jpg">
+		<p>
+			Blower has all steel housing and impeller
+		</p>
+		<a class='btn close-modal' data-modal="#modal3" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal4'>
+	<div class='content'>
+		
+		<img src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/bearings.jpg">
+		<p >
+			greasable bearings for Zero Turn Mowers	
+		</p>
+		<a class='btn close-modal' data-modal="#modal4" href="#">X</a>
+	</div>	
+</div>
+
+<div class='modal_baggers' id='modal5'>
+	<div class='content'>
+		
+		<img  src="https://badboylawnmowerparts.com/v/bagger_info_file/pic/hsmc_rearbag_pan.jpg">
+		<p>
+			Bags have vaccuum formed pan with recessed metal handle
+		</p>
+		<a class='btn close-modal' data-modal="#modal5" href="#">X</a>
+	</div>	
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+<script  src="https://badboylawnmowerparts.com/v/bagger_info_file/index.js"></script>
+
+</body>
+</html>
