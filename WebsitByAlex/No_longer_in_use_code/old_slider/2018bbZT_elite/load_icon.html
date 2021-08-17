@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		@keyframes load{
+			0% {
+				margin-left: -20vw;
+			}
+			10% { 
+				transform: rotate(0);
+			}
+			25% {
+				transform: rotate(-35deg);
+			}
+			35%{
+				transform: rotate(-25deg);
+			}
+			55%{
+				transform: rotate(-65deg);
+			}
+			65%{
+				transform: rotate(-55deg);
+			}
+			85%{
+				transform: rotate(-35deg);
+			}
+
+			100% {
+				transform: rotate(-40deg);
+				margin-left: 110vw;
+			}
+
+
+		}
+
+		.load__bg img {
+			    top: 0;
+
+			display: block;
+			width: auto;
+			height: 35vh;
+			z-index: 100;
+			margin: 25vh 0;
+			animation: load 3s infinite ease-in-out;
+		}
+		.load__bg {
+			width: 100vw;
+			height: 100vh;
+			z-index: 99;
+			position: fixed;
+			background-color: #d4c5c5;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="load__bg">
+		<img rel="preload" src="bb_mover__icon.png" alt="load_icon">
+	</div>
+</body>
+</html>

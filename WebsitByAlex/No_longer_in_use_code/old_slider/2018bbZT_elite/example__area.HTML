@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+// stores the device context of the canvas we use to draw the outlines
+// initialized in myInit, used in myHover and myLeave
+var hdc;
+
+// shorthand func
+function byId(e){return document.getElementById(e);}
+
+// takes a string that contains coords eg - "227,307,261,309, 339,354, 328,371, 240,331"
+// draws a line from each co-ord pair to the next - assumes starting point needs to be repeated as ending point.
+function drawPoly(coOrdStr)
+{
+    var mCoords = coOrdStr.split(',');
+    var i, n;
+    n = mCoords.length;
+
+    hdc.beginPath();
+    hdc.moveTo(mCoords[0], mCoords[1]);
+    for (i=2; i<n; i+=2)
+    {
+        hdc.lineTo(mCoords[i], mCoords[i+1]);
+    }
+    hdc.lineTo(mCoords[0], mCoords[1]);
+    hdc.stroke();
+}
+
+function drawRect(coOrdStr)
+{
+    var mCoords = coOrdStr.split(',');
+    var top, left, bot, right;
+    left = mCoords[0];
+    top = mCoords[1];
+    right = mCoords[2];
+    bot = mCoords[3];
+    hdc.strokeRect(left,top,right-left,bot-top); 
+}
+
+function myHover(element)
+{
+    var hoveredElement = element;
+    var coordStr = element.getAttribute('coords');
+    var areaType = element.getAttribute('shape');
+
+    switch (areaType)
+    {
+        case 'polygon':
+        case 'poly':
+            drawPoly(coordStr);
+            break;
+
+        case 'rect':
+            drawRect(coordStr);
+    }
+}
+
+function myLeave()
+{
+    var canvas = byId('myCanvas');
+    hdc.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function myInit()
+{
+    // get the target image
+    var img = byId('img-imgmap201293016112');
+
+    var x,y, w,h;
+
+    // get it's position and width+height
+    x = img.offsetLeft;
+    y = img.offsetTop;
+    w = img.clientWidth;
+    h = img.clientHeight;
+
+    // move the canvas, so it's contained by the same parent as the image
+    var imgParent = img.parentNode;
+    var can = byId('myCanvas');
+    imgParent.appendChild(can);
+
+    // place the canvas in front of the image
+    can.style.zIndex = 1;
+
+    // position it over the image
+    can.style.left = x+'px';
+    can.style.top = y+'px';
+
+    // make same size as the image
+    can.setAttribute('width', w+'px');
+    can.setAttribute('height', h+'px');
+
+    // get it's context
+    hdc = can.getContext('2d');
+
+    // set the 'default' values for the colour/width of fill/stroke operations
+    hdc.fillStyle = 'red';
+    hdc.strokeStyle = 'red';
+    hdc.lineWidth = 2;
+}
+</script>
+
+<style>
+body
+{
+    background-color: gray;
+}
+canvas
+{
+    pointer-events: none;       /* make the canvas transparent to the mouse - needed since canvas is position infront of image */
+    position: absolute;
+}
+</style>
+
+<title></title>
+</head>
+<body onload='myInit()'>
+    <canvas id='myCanvas'></canvas>     <!-- gets re-positioned in myInit(); -->
+<center>
+<img name="qr_map_zt" src="qr_map_zt.jpg" width="2102" height="2626" border="0" id="qr_map_zt" usemap="#m_qr_map_zt" alt="" /><map name="m_qr_map_zt" id="m_qr_map_zt">
+<area id="Are" onmousemove="Color(this)" shape="rect" coords="486,2478,2070,2596" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Gallon-Synthetic-Blend-p/085-6000-00.htm" target="_blank" alt="" />
+<area shape="rect" id="img-imgmap201293016112"  onmouseover='myHover(this);' onmouseout='myLeave();'coords="486,2354,2070,2478" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Quart-Synthetic-Blend-Engine-p/085-6015-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,2230,1278,2354" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Spark-Plug-Kohler-Briggs-Cat-p/015-8000-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1278,2230,2070,2354" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Spark-plug-Kawasaki-NGKBPR2ES-p/015-8001-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1542,2048,2070,2230" href="http://www.badboylawnmowerparts.com/Bad-Boy-22-26-Kawasaki-Air-Filter-FR-FS-Engines-p/063-2097-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1010,2048,1542,2230" href="http://www.badboylawnmowerparts.com/product-p/015-2026-03.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,2048,1010,2230" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-25-26-HP-Koh-Air-Filter-ZT-MZ-p/063-5003-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1926,1278,2048" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-25-HP-Kohler-Oil-Filter-ZT-MZ-p/063-5004-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1278,1926,2070,2048" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Kawasaki-Oil-Filter-p/063-8017-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1278,1802,2070,1926" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Universal-Inline-Fuel-Filter-p/063-6000-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1802,1278,1926" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Universal-Inline-Fuel-Filter-p/063-6000-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1740,2070,1802" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Pump-Belt-for-ZT-MZ-p/041-6400-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1676,2070,1740" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-B165-Belt-60-Pup-Lightning-ZT-Outlaw-p/041-1650-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1616,2070,1676" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-54-CZT-Elite-Deck-Belt-p/041-1560-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1546,2070,1616" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-B147-Belt-50-ZT-p/041-1470-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1486,2070,1546" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-ZT-Hydraulic-Filter-p/063-1050-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1608,1360,2070,1486" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-60-Wavy-Mulching-Blade-p/038-6016-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="948,1360,1608,1486" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-60-Gator-Mulching-Blade-p/038-6003-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1360,948,1486" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-60-High-Lift-Fusion-Blade-p/038-6060-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1228,948,1360" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-54-Fusion-Blade-for-Outlaw-p/038-0001-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="948,1228,1608,1360" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-54-Deck-Gator-Blade-Outlaw-p/038-0003-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1608,1228,2070,1360" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-54-Wavy-Mulching-Blade-p/038-5220-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="1608,1106,2070,1228" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-48-50-Wavy-Mulching-Blade-p/038-4825-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="948,1106,1608,1228" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-48-50-Gator-Mulching-Blade-p/038-5000-00.htm" target="_blank" alt="" />
+<area shape="rect" coords="486,1106,948,1228" href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-48-50-ZT-Blade-with-Fusion-p/038-5350-00.htm" target="_blank" alt="" />
+</map>
+</center>
+
+</body>
+</html>
