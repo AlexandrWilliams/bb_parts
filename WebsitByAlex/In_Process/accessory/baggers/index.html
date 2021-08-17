@@ -1,0 +1,111 @@
+<style type="text/css">
+	.bagger__conteiner {
+		margin-top: 40px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-around;
+	}
+	.bagger {
+		margin-top: 20px;
+		display: flex;
+		flex-flow: column;
+		padding: 20px 10px;
+		border: 2px solid #ff4000;
+	}
+	.bagger:hover {
+		background-color: #f0f8ff57;
+		opacity: 0.9;
+	}
+	.bagger img {
+		width: 350px;
+		min-width: 175px;
+		height: calc(100% * 0.75);
+	}
+	.bagger h3 {
+		text-decoration: none;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.5px;
+		text-align: center;
+		margin-top: 15px;
+	}
+</style>
+<div class="bagger__conteiner">
+	<a href="https://www.badboylawnmowerparts.com/category-s/4479.htm">
+		<div class="bagger">
+			<img src="https://www.badboylawnmowerparts.com/v/vspfiles/photos/088-1936-00-2.jpg" alt="bb bagger">
+			<h3>Bad Boy Baggers</h3>
+		</div>
+	<a href="http://www.badboylawnmowerparts.com/category-s/4478.htm">
+		<div class="bagger">
+			<img src="https://www.badboylawnmowerparts.com/v/vspfiles/photos/12bushel-2.jpg">
+			<h3>Hummbolt Baggers</h3>
+		</div>
+	</a>
+</div>
+<!-- The script below will delete main content-->
+<script>
+const productAreaHtml = document.querySelector("#vCSS_mainform");
+productAreaHtml.remove();
+const mainContentConteiner = document.querySelector(".container--content");
+const markupForContent = `
+	<tr>
+	          <td colspan="2" class="vCSS_breadcrumb_td"><b>
+	&nbsp; 
+	<a href="http://www.badboylawnmowerparts.com/">Home</a> &gt; 
+	<a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mowers-ACCESSORIES-s/146.htm" title="Bad Boy Mowers ACCESSORIES"> ACCESSORIES</a> &gt; 
+
+	            </b>
+	      <br><img src="/v/vspfiles/templates/266/images/clear1x1.gif" width="5" height="5" alt=""><br>
+	            <br>
+	      <img src="/v/vspfiles/templates/266/images/clear1x1.gif" width="5" height="5" alt="">
+	    </td>
+	</tr>
+<style type="text/css">
+	.bagger__conteiner {
+		margin-top: 40px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-around;
+	}
+	.bagger {
+		margin-top: 20px;
+		display: flex;
+		flex-flow: column;
+		padding: 20px 10px;
+		border: 2px solid #ff4000;
+	}
+	.bagger:hover {
+		background-color: #f0f8ff57;
+		opacity: 0.9;
+	}
+	.bagger img {
+		width: 350px;
+		min-width: 175px;
+		height: calc(100% * 0.75);
+	}
+	.bagger h3 {
+		text-decoration: none;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.5px;
+		text-align: center;
+		margin-top: 15px;
+	}
+</style>
+<div class="bagger__conteiner">
+	<a href="https://www.badboylawnmowerparts.com/category-s/4479.htm">
+		<div class="bagger">
+			<img src="https://www.badboylawnmowerparts.com/v/vspfiles/photos/088-1936-00-2.jpg" alt="bb bagger">
+			<h3>Bad Boy Baggers</h3>
+		</div>
+	<a href="http://www.badboylawnmowerparts.com/category-s/4478.htm">
+		<div class="bagger">
+			<img src="https://www.badboylawnmowerparts.com/v/vspfiles/photos/12bushel-2.jpg">
+			<h3>Hummbolt Baggers</h3>
+		</div>
+	</a>
+</div>
+`
+mainContentConteiner.insertAdjacentHTML('afterbegin', markupForContent);
+</script>

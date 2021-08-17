@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accesories</title>
+	<style type="text/css">
+		.accessory-conteiner {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-flow: column;
+			justify-content: space-around;
+		}
+		.accessory__drop-down {
+			display: flex;
+			flex-flow: wrap;
+			align-items: center;
+			margin: 20px auto;
+		}
+		.drop__down_block {
+			padding: 0 15px;
+		}
+		.accessory__item {
+			margin: 20px auto;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap: 18px;
+		}
+		.accessory__card-link {
+			text-decoration: none;
+			color: black;
+		}
+		.accessory__card {
+			padding: 10px;
+			background-color: #f3eeee;
+			position: relative;
+			width: 100%;
+			max-width: 325px;
+			text-align: center;
+			letter-spacing: 0.7px;
+		}
+		.accessory__card img {
+			width: 100%;
+			height: auto;
+		}
+		.accessory__card:hover {
+			cursor: pointer;
+			background-color: #f3eeee87;
+		}
+	</style>
+</head>
+<body>
+	<div class="accessory-conteiner">
+		<div class="accessory__drop-down">
+			<div class="drop__down_block">
+				<p class="drop__down_text-space">Year: 
+					<select id="slct1" name="slct1" class="drop__down_choose-box">
+				  		<option value="">- Select -</option>
+				  		<option value="2007">2007</option>
+				  		<option value="2008">2008</option>
+						<option value="2009">2009</option>
+						<option value="2010">2010</option>
+				 		<option value="2011">2011</option>
+				  		<option value="2012">2012</option>
+				  		<option value="2013">2013</option>
+				  		<option value="2014">2014</option>
+				  		<option value="2015">2015</option>
+				  		<option value="2016">2016</option>
+				  		<option value="2017">2017</option>
+				  		<option value="2018">2018</option>
+				  		<option value="2019">2019</option>
+					</select>
+				</p>
+			</div>
+			<div class="drop__down_block">
+				<p class="drop__down_text-space">Model: 
+					<select id="slct2" name="slct2" class="drop__down_choose-box">
+				  		<option value="">- Select -</option>
+				  		<option value="ZT">ZT</option>
+				  		<option value="Maverick">Maverick</option>
+						<option value="MZ">MZ</option>
+						<option value="Outlaw">Outlaw</option>
+				 		<option value="Outlaw XP">Outlaw XP</option>
+				  		<option value="Outlaw Extreme">Outlaw Extreme</option>
+				  		<option value="MZ Magnum">MZ Magnum</option>
+					</select>
+				</p>
+			</div>
+			<div class="drop__down_block" >
+				<input type="submit" id="go" name="go" value="View Accessory"/>
+			</div>
+		</div>
+		<div class="accessory__preloader"></div>
+		<div class="accessory__item">
+			<a class="accessory__card-link" href="#">
+				<div class="accessory__card">
+					<img src="http://cdn3.volusion.com/mkrpe.efghr/v/vspfiles/photos/WET%20SOUNDS-2T.jpg">
+					<h3>Some Description</h3>
+				</div>
+			</a>
+			<a class="accessory__card-link" href="#">
+				<div class="accessory__card">
+					<img src="http://cdn3.volusion.com/mkrpe.efghr/v/vspfiles/photos/WET%20SOUNDS-2T.jpg">
+					<h3>Some Description</h3>
+				</div>
+			</a>
+			<a class="accessory__card-link" href="#">
+				<div class="accessory__card">
+					<img src="http://cdn3.volusion.com/mkrpe.efghr/v/vspfiles/photos/WET%20SOUNDS-2T.jpg">
+					<h3>Some Description</h3>
+				</div>
+			</a>
+			<a class="accessory__card-link" href="#">
+				<div class="accessory__card">
+					<img src="http://cdn3.volusion.com/mkrpe.efghr/v/vspfiles/photos/WET%20SOUNDS-2T.jpg">
+					<h3>Some Description</h3>
+				</div>
+			</a>
+			<a class="accessory__card-link" href="#">
+				<div class="accessory__card">
+					<img src="http://cdn3.volusion.com/mkrpe.efghr/v/vspfiles/photos/WET%20SOUNDS-2T.jpg">
+					<h3>Some Description</h3>
+				</div>
+			</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const dropDownYear = document.querySelector('#slct1');
+		const dropDownModel = document.querySelector('#slct2');
+		const accessoryArr = [{'year' : 2011, 'accessory': }]
+	</script>
+</body>
+</html>
