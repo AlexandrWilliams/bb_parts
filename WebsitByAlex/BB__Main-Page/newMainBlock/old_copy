@@ -1,0 +1,333 @@
+<link rel="stylesheet" type="text/css" href="https://www.badboylawnmowerparts.com/v/WebsiteByAlex/main__page/main__custom-code_conteiner.css"></link>
+
+<!-- FINDBYSERIAL -->
+<input id="check" type="button" name="enter" value="Find By Serial Number" onClick="goToPage()"/>
+<!--FINDBYSERIAL_END -->
+
+<!-- Drop Down -->
+<div class="mover__look-up">
+<p  class="mover__look-up_txt">Click The Drop-Down Menu To Find The Bad Boy Mower Parts You Need For Your Lawn Mower</p>
+	<form name="dropDownFormYearModel" autocomplete="off" class="drop-down-form">
+		<select class="form__select form__select-year" id="year" value="year">
+		  <option>-Year-</option>
+		  <option>2007</option>
+		  <option>2008</option>
+		  <option>2009</option>
+		  <option>2010</option>
+		  <option>2011</option>
+		  <option>2012</option>
+		  <option>2013</option>
+		  <option>2014</option>
+		  <option>2015</option>
+		  <option>2016</option>
+		  <option>2017</option>
+		  <option>2018</option>
+		  <option>2019</option>
+		  <option>2020</option>
+                  <option>2021</option>
+		</select>
+		<select class="form__select form__select-model" id="model" >
+			<option>-Model-</option>
+		</select>
+		<input class="form__select form__select-submit" id="submit" type="submit" value="Find parts">
+		<span class="form__error form__error_off"><span>Error:</span> Please select year for you mower</span>
+	</form>
+</div>
+<!-- Drop Down END -->
+
+<!-- Desctop Product Line on Fixed IMG -->
+<br/>
+	<div class="bg_img_block">
+		<div class="height_for_bg">
+			<div class="three_img">
+				<div class="img_h first_three"><a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-PARTS-LOOK-UP-s/100.htm"><img class="img_hover hvr-buzz-out" src="/v/images/images/bbplookup.jpg"></a></div>
+				<div class="img_h first_three"><a href="http://www.badboylawnmowerparts.com/BAD-BOY-APPAREL-s/2343.htm"><img class="img_hover hvr-buzz-out" src="/v/images/images/bbapparel.jpg"></a></div>
+				<div class="img_h first_three"><a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-BLADES-s/243.htm"><img class="img_hover hvr-buzz-out" src="/v/images/images/bbblade.jpg"></a></div>
+			</div>
+			<div class="middle_img">
+				<div class="img_h next"><a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-BELTS-s/242.htm"><img class="img_hover hvr-pulse-grow" src="/v/images/images/bbbelt.jpg"></a></div>
+				<div class="img_h next space_nest"><a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-Pulleys-s/1863.htm"><img class="img_hover hvr-pulse-grow" src="/v/images/images/bbpulley.jpg"></a></div>
+			</div>
+			<div class="last_img">
+				<div class="img_h last"><a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-ACCESSORIES-s/146.htm"><img class="img_hover hvr-buzz-out" src="/v/images/images/bbaccessories.jpg"></a></div>
+				<div class="img_h last"><a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-SERVICE-KITS-s/2175.htm"><img class="img_hover hvr-buzz-out" src="/v/images/images/bbservicekit.jpg"></a></div>
+				<div class="img_h last"><a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-Spindles-s/1862.htm"><img class="img_hover hvr-buzz-out" src="/v/images/images/bbspindle.jpg"></a></div>
+			</div>
+		</div>
+	</div>
+<!-- Desctop Product Line on Fixed IMG END -->
+
+<!-- Mobile Product line -->
+<main class="scroll_off_switch"> 
+  <div class="content_of_scroll">
+    <div class="scrolling-wrapper-flexbox">
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-ACCESSORIES-s/146.htm">
+      		<img  src="/v/images/images/bbaccessories.jpg" alt="OEM Bad Boy lawn mower accessory">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-BLADES-s/243.htm">
+      		<img  src="/v/images/images/bbblade.jpg" alt="OEM Bad Boy zero turn mower blades for you lawn mower">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-PARTS-LOOK-UP-s/100.htm">
+      		<img  src="/v/images/images/bbplookup.jpg" alt="parts look-up and diagram for bad boy mowers">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-BELTS-s/242.htm">
+      		<img  src="/v/images/images/bbbelt.jpg" alt="OEM bad boy mower deck belts and drive belts">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/BAD-BOY-APPAREL-s/2343.htm">
+      		<img  src="/v/images/images/bbapparel.jpg" alt="BAD BOY apperel">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-Pulleys-s/1863.htm">
+      		<img  src="/v/images/images/bbpulley.jpg" alt="OEM Bad Boy mower deck pulleys and drive pulleys">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-SERVICE-KITS-s/2175.htm">
+      		<img  src="/v/images/images/bbservicekit.jpg" alt="Service kit for you BAD BOY zero turn lawn mower">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-Spindles-s/1862.htm">
+      		<img src="/v/images/images/bbspindle.jpg" alt="Spindle for bad boy mowers">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-MANUALS-s/766.htm">
+      		<img src="/v/vspfiles/assets/images/OWNERS-MANUALS-1.jpg" alt="Owners-Manuals for Bad Boy lawn mower">
+      	</a>
+      </div>
+      <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/SearchResults.asp?Cat=1861" >
+      		<img src="/v/vspfiles/assets/images/FIND-MY-SERIAL-NUMBER-1.jpg" alt="Find My Serial Number">
+      	</a>
+      </div>
+<!--       <div class="card">
+      	<a href="https://www.badboylawnmowerparts.com/BAD-BOY-LAWN-MOWER-PART-COM-p/bad-boy-lawn-mower-part.com.htm">
+      		<img src="/v/vspfiles/assets/images/BAD-BOY-LAWN-MOWER-PART.COM-1.jpg" alt="Bad Boy Mower Parts">
+      	</a>
+      </div> -->
+    </div>
+  </div>
+</main>
+<!--Mobile Product Line END -->
+
+<div style="text-align: center;">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="box-sizing: border-box; border-spacing: 0px; background-color: rgb(255, 255, 255); table-layout: fixed; color: rgb(34, 34, 34); font-family: Chivo, sans-serif, google; font-size: 14px; text-align: start;">
+	<tbody style="box-sizing: border-box;">
+	<tr style="box-sizing: border-box;">
+		<td width="100%" valign="top" style="box-sizing: border-box; padding: 0px; text-align: center;">
+			<b style="box-sizing: border-box;">We have a detailed easy to use Interactive parts look-up system in Color to help you find those Bad Boy Lawn Mower Parts your looking for at the best price possible with the fastest shipping available normally in 2 days.</b>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	<br/>
+  <!-- 3 Pic -->
+        <style>
+               .three_pic_off {
+                  display: flex;
+               }
+               @media screen and (max-width: 1390px) {
+	         .three_pic_off {
+                    display: none;
+                 }
+                }
+        </style>
+	<div class="three_pic_off" >
+		<div style="width: 510px;">
+			<a href="https://www.badboylawnmowerparts.com/SearchResults.asp?Cat=1861" style="/* width: 510px; */"><img src="/v/vspfiles/assets/images/FIND-MY-SERIAL-NUMBER-1.jpg" alt="Find My Serial Number"/></a>
+		</div>
+		<div style="width: 510px;">
+			<a href="https://www.badboylawnmowerparts.com/BAD-BOY-LAWN-MOWER-PART-COM-p/bad-boy-lawn-mower-part.com.htm"><img src="/v/vspfiles/assets/images/BAD-BOY-LAWN-MOWER-PART.COM-1.jpg" alt="Bad Boy Mower Parts"/></a>
+		</div>
+		<div style="width: 510px;">
+			<a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-MANUALS-s/766.htm"><img src="/v/vspfiles/assets/images/OWNERS-MANUALS-1.jpg" alt="Owners-Manuals for Bad Boy mowers"/></a>
+		</div>
+	</div>
+  <!-- 3 Pic END-->
+  <br/>
+</div>
+
+<!-- Product With Video Bg -->
+<div style="text-align: center;">
+
+  <div  class="height_for_saf">
+    <button id="shopByPartsButtonHidden" href="javascript:void(0)" onclick="document.getElementById('shopByPartsButton').style.display='grid'; document.getElementById('shopByPartsButtononVID').style.position='absolute'; document.getElementById('shopByPartsButtonHidden').style.display='none';" class="buttonShopBy" >SHOP BY PART</button>
+    <!-- BG Video -->
+    <div id="shopByPartsButtononVID" class="fullscreen-bg-video">
+      <div class="overlay"></div>
+        <video loop muted autoplay class="fullscreen-bg__video">
+            <source src="/v/images/2017badboybgvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- BG video END -->
+    <div id="shopByPartsButton" class="link_partsmenu">
+      <!-- Font color #FF4000 -->
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-ACTUATOR-s/2180.htm">ACTUATOR</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-AIR-FILTERS-s/2181.htm">AIR FILTER</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-ARMS-s/2206.htm">ARMS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-BALL-JOINT-s/2208.htm">BALL JOINT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-BEARINGS-BUSHINGS-s/2182.htm">BEARING</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mower-BLADES-s/243.htm">BLADES</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-BRACKETS-s/2209.htm">BRACKET</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-BRAKES-s/2210.htm">BRAKES</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-BUMPERS-s/2211.htm">BUMPER</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CABLES-s/2185.htm">CABLES</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CAPS-s/2212.htm">CAPS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CARBURETORS-PARTS-s/2184.htm">CARBS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CHAINS-s/2213.htm">CHAINS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CHOKE-s/2214.htm">CHOKE</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CHUTE-ASSEMBLY-s/2215.htm">CHUTE</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-CLAMPS-s/2216.htm">CLAMPS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-COOLERS-RADIATORS-s/2217.htm">RADIATORS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-COVERS-s/2218.htm">COVERS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-COVERS-s/2218.htm">DAMPER</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-DECALS-s/2207.htm">DECALS</a>
+      <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-BELTS-s/242.htm">DECK BELT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-DECK-LIFT-s/2220.htm">DECK LIFT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-DECKS-s/2187.htm">DECK</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-DECK-WHEELS-s/2257.htm">DECK WHEEL</a>
+      <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-BELTS-s/242.htm">DRIVE BELT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-DRUM-s/2221.htm">DRUM</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-DUST-COVERS-s/2258.htm">DUST COVER</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-PTO-CLUTCH-PARTS-s/2189.htm">PTO CLUTCH</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-ENGINES-PARTS-s/2191.htm">ENGINE PARTS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-FITTINGS-s/2222.htm">FITTINGS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-FORKS-s/2223.htm">FORKS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-FRAME-s/2224.htm">FRAME</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-FUEL-FILTERS-LINES-s/2192.htm">FUEL ITEMS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-FUEL-TANKS-s/2252.htm">FUEL TANK</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-GUARDS-s/2225.htm">GUARDS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HANDLE-s/2226.htm">HANDLE</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HINGES-s/2227.htm">HINGES</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HITCH-s/2228.htm">HITCH</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HOOD-s/2229.htm">HOOD</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HOSES-s/2230.htm">HOSES</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HOUR-METER-s/2251.htm">HOUR METER</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HOUSING-s/2231.htm">HOUSING</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-HYDRAULIC-FILTERS-s/2197.htm">HYDRAULIC</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-IGNITIONS-PARTS-s/2193.htm">IGNITION</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-KEYS-s/2232.htm">KEYS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-KNOBS-s/2233.htm">KNOBS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-LATCHES-s/2234.htm">LATCHES</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-LUBRICANTS-s/2194.htm">LUBRICANT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-MATS-s/2235.htm">MATS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-MOTORS-s/2236.htm">MOTORS</a>
+      <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mowers-OIL-s/2267.htm">OIL</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-OIL-DRAIN-s/2259.htm">OIL DRAIN</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-OIL-FILTERS-s/2196.htm">OIL FILTER</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-OIL-LIGHT-s/2239.htm">OIL LIGHT</a>
+      <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mowers-MANUALS-s/766.htm">MANUALS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-PAINT-s/2241.htm">PAINT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-PANEL-s/2242.htm">PANEL</a>
+      <a href="http://www.badboylawnmowerparts.com/SearchResults.asp?Cat=1863">PULLEYS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-PUMPS-s/2243.htm">PUMPS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SEALS-s/2245.htm">SEALS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SEAT-FRAMES-s/2246.htm">SEAT FRAME</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SEATS-s/2199.htm">SEATS</a>
+      <a href="http://www.badboylawnmowerparts.com/SearchResults.asp?Cat=2175">SERVICE KIT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SPACERS-s/2247.htm">SPACERS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SPARK-PLUGS-s/2200.htm">SPARK PLUGS</a>
+      <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Spindles-s/1862.htm?searching=Y&sort=2&cat=1862&show=40&page=1">SPINDLE</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SPRINGS-s/2248.htm">SPRINGS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-STARTERS-PARTS-s/2202.htm">STARTERS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-STEERING-PARTS-s/2203.htm">STEERING</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SUPPORT-s/2249.htm">SUPPORT</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-SWITCH-RELAY-s/2250.htm">RELAY</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-THROTTLE-s/2253.htm">THROTTLE</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-TIRES-TUBES-WHEELS-s/2204.htm">WHEEL</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-TRANSAXLES-s/2205.htm">TRANS</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-TURNBUCKLE-s/2256.htm">TURNBUCKLE</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-WIRING-HARNESS-s/2254.htm">WIRING</a>
+      <a href="https://www.badboylawnmowerparts.com/Bad-Boy-Mowers-YOKES-s/2255.htm">YOKES</a>
+    </div>
+  </div>
+
+
+  <inline style="font-size: 18px; font-weight: bold;">Use only Genuine Bad Boy Mower Parts! <br/>Bad Boy Lawn Mower Parts is your trusted source for original Bad Boy Parts, Accessories & Equipment. <br/>We carry a full selection of all Bad Boy Mower Parts at THE Lowest Prices Online.<br/>We are not Bad Boy Mowers, Inc., but we are affiliated with them. We are one of their largest dealers in North East Florida. <br/>We stock most all of the Bad Boy Line of Mowers, lots of the Bad Boy Mower Accessories, <br/>and 100's if not 1000's of Bad Boy Mower Parts. <br/>If you have any questions at all, please feel free to contact us by our <a href="https://www.badboylawnmowerparts.com/Articles.asp?ID=259" alt="Bad Boy contact form" style="color: red;">Contact Form</a> or email at badboylawnmowerparts@gmail.com please give us 24hr for response time.. <br/>We are always happy to assist with your Bad Boy Mower Parts needs at up to 10% LESS than our competitors, <br/>including Bad Boy Mowers, Inc.</inline><br/><br/>
+</div>
+<center><a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Advanced-Chute-System-6000B-p/088-6000-00.htm"><br/><img src="/v/vspfiles/assets/images/BADBOY54,60,61,72REV2.jpg" alt="Advance Chute Systems"/></a> <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-Advanced-Chute-System-6000ULS-p/088-6003-00.htm"><img src="/v/vspfiles/assets/images/FITSMOSTOTHERSREV2.jpg" alt="Advance Chute Systems"/></a> <a href="http://www.badboylawnmowerparts.com/Bad-Boy-Mower-ACS-for-MZs-p/088-4842-00.htm"><img src="/v/vspfiles/assets/images/MZ42,48,54REV2.jpg" alt="Advance Chute Systems"/></a><br/><br/>
+</center>
+<div class="vcb-snippet">
+	<div class="our-team">
+		<div class="row clearfix">
+			<div class="column full center" style="line-height: 30px; text-align:center; letter-spacing: 1px;">
+				<h1 style="text-align: center;"><inline style="color: rgb(0, 0, 0); font-size: 22px;">Our Team</inline></h1>
+				<p>
+					<inline style="color: rgb(0, 0, 0);"><b><inline style="font-size: 18px;"><inline><inline> 					Here at Bad Boy Lawn Mower Parts we strive to offer you the most user friendly Parts Look-up Diagrams possible with very fast and accurate Bad Boy Mower OEM Parts at an affordable price. 					</inline></inline></inline></b></inline>
+				</p>
+				<p>
+					<inline><inline><inline style="color: rgb(0, 0, 0);"><b><inline style="font-size: 18px;">Please feel free to contact any of our team members with questions or comments about the web site or if you are having a problem finding that one particular part.</inline></b></inline></inline></inline>
+				</p>
+			</div>
+		</div>
+<style>
+    .block__our-team{
+     display: flex;
+     flex-flow: row;
+     margin: 0 auto;
+     justify-content: space-around;
+    }
+   @media only screen and (max-width: 540px){
+    .block__our-team{
+      flex-flow: column;
+    }
+   }
+</style>
+		<div class="row clearfix">
+                   <div class="block__our-team">
+			<div class="column center" style="text-align: center;">
+				<img style="border-radius: 500px;" alt="" src="/v/vspfiles/assets/images/14151693_584968925044878_175790716_o.jpg"/>
+				<p style="text-align: center;">
+					<b>Steve Williams</b><br/>Owner/President
+				</p>
+				<div class="is-social edit">
+					<a href="https://twitter.com/"><i class="icon ion-social-twitter" style="margin-right: 1em;"></i></a><a href="https://www.facebook.com/Bad-Boy-Lawn-Mowers-Parts-955532204458115/"><i class="icon ion-social-facebook" style="margin-right: 1em;"></i></a><a href="https://plus.google.com/"><i class="icon ion-social-googleplus" style="margin-right: 1em;"></i></a><a title="" href="mailto:scoobiesteve@nefcom.net" target="_blank"><i class="icon ion-android-drafts"></i></a>
+				</div>
+			</div>
+			<div class="column center" style="text-align: center;">
+				<img style="border-radius: 500px;" alt="" src="/v/vspfiles/assets/images/14191807_584969605044810_1308267995_o.jpg"/>
+				<p>
+					<b>Yuliia Williams</b><br/>Website Designer
+				</p>
+				<div class="is-social edit">
+					<a href="https://twitter.com/"><i class="icon ion-social-twitter" style="margin-right: 1em;"></i></a><a href="https://www.facebook.com/"><i class="icon ion-social-facebook" style="margin-right: 1em;"></i></a><a href="https://plus.google.com/"><i class="icon ion-social-googleplus" style="margin-right: 1em;"></i></a><a title="" href="mailto:mcm@nefcom.net" target="_blank"><i class="icon ion-android-drafts"></i></a>
+				</div>
+			</div>
+			<div class="column center" style="text-align: center;">
+				<img style="border-radius: 500px;" alt="" src="/v/vspfiles/assets/images/14138955_584975461710891_1925702930_o.jpg"/>
+				<p>
+					<b>Alexander Williams</b><br/>Website Coder/Tech
+				</p>
+				<div class="is-social edit">
+					<a href="https://twitter.com/"><i class="icon ion-social-twitter" style="margin-right: 1em;"></i></a><a href="https://www.facebook.com/"><i class="icon ion-social-facebook" style="margin-right: 1em;"></i></a><a href="https://plus.google.com/"><i class="icon ion-social-googleplus" style="margin-right: 1em;"></i></a><a title="" href="mailto:mcm@nefcom.net" target="_blank"><i class="icon ion-android-drafts"></i></a>
+				</div>
+			</div>
+                    </div>
+		</div>
+	</div>
+</div>
+<!--BG_FIXED_IMG -->
+<div class="bg_fixed_img" style="background-image: url('https://www.badboylawnmowerparts.com/v/WebsiteByAlex/main__page/img/scrollBGMainPage.jpg'); height: 400px; background-attachment: fixed; background-size:  cover; width: 100%;"></div>
+<!-- BG_FIXED_IMG END -->
+<!--TXT About MCM -->
+<div class="txtAboutUs">
+  <h3 class="txtAboutUs__title">Thank you for shopping with BadBoyLawnMowerParts.com.</h3>
+  <h3 class="txtAboutUs__subtitle">Our Bad Boy Customer is our First Priority.</h3>
+  <p class="txtAboutUs__content"><span>At badboylawnmowerparts.com, we have thousands of Bad Boy Mowers Parts in stock for you.</span><span>We carry the most common and fast moving Bad Boy Parts, as well as the Bad Boy Mower parts that are hard to find.</span><span>Use our category "buttons" on this page to search through our Bad Boy Accessories, ad Boy Belts, Bad Boy Blades, Bad Boy Spindles, Bad Boy Pulleys, Bad Boy Service Kits and Bad Boy Owner's Manuals.</span><span>If you know your Bad Boy part number(s) then type it into our Parts Lookup section (click the magnifying glass) to search and purchase.If you don't know the Bad Boy mower parts numbers, No Worries! Point to Parts Look-Up, then choose Bad Boy Parts Look-Up.</span><span>In this section you will find our diagrams/schematic views of all of the Bad Boy Mowers (AOS, CZT, PUP, Lightning, MZ, ZT or Outlaw Series).</span><span>These allow you to choose your Bad Boy Mower year, then model, then select the section of the mower you are working on.</span><span>Just scroll down to the large schematic drawing and just point and click on the number for the exact Bad Boy Mower part you need.</span><span>We have thousands of Bad Boy Mower Parts in stock.</span><span>Surely we have what you need to get your Bad Boy Mower back up and running.</span><span>We are a Bad Boy Mower Dealer with experience and expertise in this industry since 1999.</span><span>Our 18+ years of Parts Knowledge is at your disposal for getting the right Bad Boy parts to you both quickly and easily.</span><span>Our mission is to get you the right Bad Boy Blade, Bad Boy Belt or Bad Boy Service Kit or Bad Boy Part that you need quickly and accurately, the first time. But if an issue does arise, we are dedicated to make it right for our Bad Boy Mower Customer.</span><span>Don't forget to check out our Accessory Section.</span><span>Get that Bad Boy Bagger, Bad Boy Cover or Bad Boy Spoiler, or whichever accessory you want for your Bad Boy Mower! If you can't find what you need.</span><span>We are here to help you! To contact us please use our <a href="https://www.badboylawnmowerparts.com/Articles.asp?ID=259" alt="Bad Boy contact form" style="color: red;">Contact Form</a> or email at badboylawnmowerparts@gmail.com please give us 24hr for response time.</span><span>We are always happy to assist our Bad Boy Customers.</span><span>We appreciate you choosing Bad Boy Lawn Mower Parts as your source for Bad Boy Mowers, Bad Boy Mower Parts and Bad Boy Mower Accessories. Let our experience lead you so you can keep your Bad Boy Mower in tip top shape and continue to Mow with an Attitude!</span></p>
+</div>
+<!-- TXT About MCM End -->
+<!-- FINDBYSERIAL -->
+<script type="text/javascript" src="https://www.badboylawnmowerparts.com/v/bb_lawn_mover_parts_file_for_web/findBySerialNumber.js"></script>
+<!--Drop Down -->
+<script type="text/javascript" src="https://www.badboylawnmowerparts.com/v/WebsiteByAlex/main__page/scripts/dropDownYearModel.js"></script>

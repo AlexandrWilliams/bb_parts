@@ -1,0 +1,82 @@
+<script type="text/javascript" src="http://www.badboylawnmowerparts.com/v/bb_lawn_mover_parts_file_for_web/drop_down-sript.js"></script>
+<style>
+.mover__look-up_txt {
+	text-align: center; 
+	font-size: 20px; 
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.drop__down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+}
+
+.drop__down_block {
+}
+
+.drop__down_text-space {
+	margin: 0;
+}
+
+.drop__down_choose-box {
+	width: 200px;
+}
+
+@media  screen and (max-width: 1390px) {
+    .bg_fixed_img {display: none}
+}
+
+@media  screen and (max-width: 734px) {
+	.mover__look-up_txt {font-size: 16px;}
+    .drop__down { flex-flow: column; }
+}
+
+</style>
+<div class="mover__look-up">
+<p  class="mover__look-up_txt">Click The Drop-Down Menu To Find The Bad Boy Mower Parts You Need For Your Year, Model & Assembly</p>
+	<div class="drop__down" >
+		<div class="drop__down_block">
+			<p class="drop__down_text-space">Year: 
+				<select id="slct1" name="slct1" class="drop__down_choose-box" onchange="populate(this.id,'slct2')">
+			  		<option value="">- Select -</option>
+			  		<option value="2007">2007</option>
+			  		<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+			 		<option value="2011">2011</option>
+			  		<option value="2012">2012</option>
+			  		<option value="2013">2013</option>
+			  		<option value="2014">2014</option>
+			  		<option value="2015">2015</option>
+			  		<option value="2016">2016</option>
+			  		<option value="2017">2017</option>
+			  		<option value="2018">2018</option>
+			  		<option value="2019">2019</option>
+				</select>
+			</p>
+		</div>
+		<div class="drop__down_block">
+			<p class="drop__down_text-space">
+					&nbsp;&nbsp;
+					Model:&nbsp;
+				<select id="slct2" name="slct2" class="drop__down_choose-box"  onchange="populate(this.id,'slct3')"></select>
+			</p>
+		</div>
+		<div class="drop__down_block">
+			<p class="drop__down_text-space">
+					&nbsp;&nbsp;
+					Assembly:&nbsp;
+				<select id="slct3" name="slct3" class="drop__down_choose-box" onChange="getLink()"></select>
+			</p>
+		</div>
+		<div class="knopka" >&nbsp;&nbsp;
+			<input type="submit" id="go" name="go" value="Find Parts" onclick="" />
+		</div>
+		<p id="demo"></p>
+	</div>
+</div>
+
+<!-- Drop Down END -->
