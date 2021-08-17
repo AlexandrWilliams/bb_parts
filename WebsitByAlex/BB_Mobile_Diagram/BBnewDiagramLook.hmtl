@@ -1,0 +1,192 @@
+var sliderInsertPlace = document.querySelector(imgIdForMap);
+sliderInsertPlace.insertAdjacentHTML('beforebegin', `
+		<div class="phone_info_about_slider">
+      <p>Turn to Landscape view for more diagrams of this mower</p>
+      <img width="70" src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/rotate.gif" >
+	</div>
+	<div class="sliderBildDateFirstJan">
+		<div class="slider__arrow slider__arrow_left">
+			<img src="https://www.badboylawnmowerparts.com/v/popUpForDiagram/slider/arrow_l.png">
+		</div>
+		  <!--Slider Data-->
+        <div class="slider__conteiner">
+            <div class="slider__elem-conteiner slider__elem_active slider__elem_first">
+                <a href="https://www.badboylawnmowerparts.com/category-s/4754.htm">
+                  <div class="slider__elem"> 
+                      <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rog54dk-1.jpg">
+                    <h4>2019 ROGUE 54" DECK ASSEMBLY</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4755.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rog61dk-1.jpg">
+                    <h4>2019 ROGUE 61" DECK ASSEMBLY</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4756.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rog72dk-1.jpg">
+                    <h4>2019 ROGUE 72" DECK ASSEMBLY</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4757.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdecsubas-1.jpg">
+                    <h4>2019 ROGUE DECK SUB-ASSEMBLIES</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4758.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogfr-end-1.jpg">
+                    <h4>2019 ROGUE FRONT END</h4>
+                  </div>
+                </a>
+            </div>
+            <div class="slider__elem-conteiner">
+                <a href="https://www.badboylawnmowerparts.com/category-s/4759.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdkcontr-1.jpg">
+                    <h4>2019 ROGUE DECK HEIGHT CONTROL</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4760.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdkcontrc-1.jpg">
+                    <h4>2019 ROGUE DECK HEIGHT CONTROL (CONT.)</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4761.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdrarm-1.jpg">
+                    <h4>2019 ROGUE DRIVE ARM ASSEMBLIES</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4762.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdrarmc-1.jpg">
+                    <h4>2019 ROGUE DRIVE ARM ASSEMBLIES (CONT.)</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4763.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdrarmc2-1.jpg">
+                    <h4>2019 ROGUE DRIVE ARM ASSEMBLIES (CONT.2)</h4>
+                  </div>
+                </a>
+            </div>
+            <div class="slider__elem-conteiner">
+                <a href="https://www.badboylawnmowerparts.com/category-s/4764.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogtank-bat-1.jpg">
+                    <h4>2019 ROGUE TANKS & BATTERY</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4765.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogtank-batco-1.jpg">
+                    <h4>2019 ROGUE TANKS & BATTERY (CONT.)</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4766.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogtank-batco2-1.jpg">
+                    <h4>2019 ROGUE TANKS & BATTERY (CONT.2)</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4767.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogtank-batco3-1.jpg">
+                    <h4>2019 ROGUE TANKS & BATTERY (CONT.3)</h4>
+                  </div>
+                </a>
+                <a href="https://www.badboylawnmowerparts.com/category-s/4768.htm">
+                  <div class="slider__elem">
+                    <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogrearsus-1.jpg">
+                    <h4>2019 ROGUE REAR SUSPENSION</h4>
+                  </div>
+                </a>
+            </div>
+          <div class="slider__elem-conteiner">
+              <a href="https://www.badboylawnmowerparts.com/category-s/4769.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogrearsusc-1.jpg">
+                  <h4>2019 ROGUE REAR SUSPENSION (CONT.)</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4804.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogrearsusc2-1.jpg">
+                  <h4>2019 ROGUE REAR SUSPENSION (CONT.2)</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4770.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogcov-seat-1.jpg">
+                  <h4>2019 ROGUE COVERS & SEAT</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4771.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogcov-seatc-1.jpg">
+                  <h4>2019 ROGUE COVERS & SEAT (CONT.)</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4772.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogfx850kaw-1.jpg">
+                  <h4>2019 ROGUE ENGINE - 852cc KAWASAKI FX-850</h4>
+                </div>
+              </a>
+          </div>
+          <div class="slider__elem-conteiner">
+              <a href="https://www.badboylawnmowerparts.com/category-s/4773.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogfx1000kaw-1.jpg">
+                  <h4>2019 ROGUE ENGINE - 999cc KAWASAKI FX-1000</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4774.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rog824kohefi33hp-1.jpg">
+                  <h4>2019 ROGUE ENGINE - 824cc KOHLER EFI 33HP</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4775.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rog824yamefi33hp-1.jpg">
+                  <h4>2019 ROGUE ENGINE - 824cc YAMAHA EFI 33HP</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4776.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rog993vanefi37hp-1.jpg">
+                  <h4>2019 ROGUE ENGINE - 993cc VANGUARD EFI 37HP</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4779.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogq-r-1.jpg">
+                  <h4>2019 ROGUE QUICK REFERENCE</h4>
+                </div>
+              </a>
+          </div>
+          <div class="slider__elem-conteiner">
+              <a href="https://www.badboylawnmowerparts.com/category-s/4777.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdecals-1.jpg">
+                  <h4>2019 ROGUE DECALS</h4>
+                </div>
+              </a>
+              <a href="https://www.badboylawnmowerparts.com/category-s/4778.htm">
+                <div class="slider__elem">
+                  <img src="https://www.badboylawnmowerparts.com/v/images/BootstrapSLider/2019/Rogue/19rogdecals2-1.jpg">
+                  <h4>2019 ROGUE DECALS 2</h4>
+                </div>
+              </a>
+          </div>
+        </div>
+            <!--Slider Data End-->
+		<div class="slider__arrow slider__arrow_right">
+			<img src="https://www.badboylawnmowerparts.com/v/popUpForDiagram/slider/arrow_r.png">
+		</div>
+	</div>`);

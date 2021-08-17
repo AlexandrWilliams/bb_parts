@@ -1,0 +1,134 @@
+.diagram__conteiner {
+  width: max-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+}
+.diagram__conteiner a {
+  background-color: #ddd;
+  text-decoration: none;
+  width: 230px;
+  border-radius: 15px;
+}
+.diagram__elem{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.diagram__elem img{
+  max-width: none;
+  border-radius: 15px;
+  margin: 10px auto 5px;
+  height: 260px;
+  width: 210px;
+}
+.diagram__elem h4{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  font-family: ariel;
+  color: black;
+  margin: 10px;
+  text-align: center;
+}
+.diagram__conteiner a:hover{
+  background-color: #ffa5009e;
+}
+@media screen and (max-width: 1240px) {
+  .diagram__conteiner {
+    grid-template-columns: auto auto auto auto; 
+  }
+  .diagram__conteiner a {
+    width: 210px;
+  }
+  .diagram__elem img{
+    height: 240px;
+    width: 190px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .diagram__conteiner {
+    grid-template-columns: auto auto auto; 
+  }
+  .diagram__conteiner a {
+    width: 210px;
+  }
+  .diagram__elem img{
+    height: 240px;
+    width: 190px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .diagram__conteiner {
+    grid-template-columns: auto auto; 
+  }
+  .diagram__conteiner a {
+    border-radius: 20px;
+    width: 210px;
+  }
+  .diagram__elem img{
+    height: 240px;
+    width: 190px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .diagram__conteiner {
+    grid-template-columns: auto auto;
+    grid-row-gap: 10px;
+  }
+  .diagram__conteiner a {
+    border-radius: 20px;
+    width: 172px;
+  }
+  .diagram__elem img {
+    margin: 6px auto 0;
+    height: 200px;
+    width: 160px;
+  }
+  .diagram__elem h4 {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .diagram__conteiner {
+    grid-template-columns: auto auto; 
+  }
+  .diagram__conteiner a {
+    width: 150px;
+  }
+  .diagram__elem img {
+    margin: 5px auto 0;
+    height: 185px;
+    width: 140px;
+  }
+  .diagram__elem h4 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .diagram__conteiner {
+    grid-template-columns: auto auto; 
+  }
+  .diagram__conteiner a {
+    width: 140px;
+  }
+  .diagram__elem img {
+    margin: 5px auto 0;
+    height: 175px;
+    width: 130px;
+  }
+  .diagram__elem h4 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+}
