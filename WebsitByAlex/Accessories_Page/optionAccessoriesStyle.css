@@ -1,0 +1,430 @@
+@keyframes proccessCheckBox {
+			0%{
+
+			}
+			100%{
+
+			}
+		}
+		@keyframes hideOption {
+			  0%{
+			    opacity: 1;
+			    transform: rotateX(90deg);
+			  }
+			  50%{
+			    opacity: 0.5;
+			    transform: rotateX(0deg);
+			  }
+			  100%{
+			    display: none;
+			    opacity: 0;
+			    transform: rotateX(90deg);
+			  }
+		}
+		@keyframes showOption {
+			  0%{
+			    opacity: 0;
+			    transform: rotateX(90deg);
+			  }
+			  100%{
+			    opacity: 1;
+			    transform: rotateX(0deg);
+			  }
+		}
+		@keyframes checkBoxWithCatSlidedown {
+			0%{
+				top: -68px;
+			}
+			100%{
+				top: 132px;
+			}
+		}
+		@keyframes stickyMobileMove {
+			0%{
+				left: -150px;
+			}
+			100% {
+				top: 15PX;
+				left: 25px;
+			}
+		}
+		@keyframes buttonUpGO {
+			0%{
+				margin-top: 0px;
+			}
+			25% {
+				margin-top: -20px;
+			}
+			40% {
+				margin-top: 5px
+			}
+			55% {
+				margin-top: -25px;
+			}
+			75% {
+				margin-top: 5px;
+			}
+			100%{
+				margin-top: 0px;
+			}
+		}
+		/*header*/
+		.psefdo_-header {
+			width: 100%;
+			height: 315px;
+			background-color: lightgrey;
+		}
+		/*Conteiner*/
+		.main-options__conteiner {
+			max-width: 1470px;
+			min-height: 780px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			display: flex;
+			flex-flow: row;
+			grid-column-gap: 50px;
+			position: relative;
+		}
+		/*check box on left*/
+		.check-box__wrap {
+			position: relative;
+		}
+
+		.check-box__conteiner {
+			width: 272px;
+			height: fit-content;
+			-webkit-user-select: none; /* Safari */
+			-ms-user-select: none; /* IE 10 and IE 11 */
+			user-select: none; /* Standard syntax */
+			position: relative;
+		}
+		.check-box__overlay{
+			display: none;
+			position: absolute;
+		    width: 100%;
+		    height: 100%;
+		}
+		.check-box__overlay_load {
+			position: absolute;
+			top: 115px;
+			padding: 45px;
+			content: " ";
+			display: block;
+			margin: 8px;
+			border-radius: 50%;
+			border: 6px solid #000;
+			border-color: #000 transparent #000 transparent;
+			animation: lds-dual-ring 1.2s linear infinite;
+		}
+		@keyframes lds-dual-ring {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		.check-box__overlay_text {
+			position: absolute;
+			top: 148px;
+			font-size: 18px;
+			padding: 15px;
+		}
+		.check-box__proccesing {
+			display: flex;
+			justify-content: space-around;
+			background-color: #c5c5c5c7;
+			z-index: 5;			
+		} 
+		.check-box__fixed_deactive {
+			border-top: 2px black solid;
+			border-right: 2px black solid;
+			border-bottom: 0;
+			border-left: 2px black solid;
+		}
+		.check-box__fixed_active {
+			position: absolute;
+			top: 132px;
+			animation: checkBoxWithCatSlidedown 1s;
+		}
+
+		.check-box__mobile-button {
+			display: none;
+		}
+
+		.check-box__button-up {
+			display: none;
+		}
+
+		.check-box__button-up_active {
+			display: block;
+			width: 42px;
+		    height: 42px;
+		    position: fixed;
+		    bottom: 50px;
+		    z-index: 3;
+		    margin-left: 25px;
+		    cursor: pointer;
+		}
+
+		.check-box__button-up_active img {
+			width: 42px;
+			height: 42px;
+		}
+
+		.check-box__button-up_active:hover img{
+			animation: buttonUpGO 1s;
+		}
+
+		.check-box__active {
+			display: flex;
+			position: relative;
+			background-color: #f26522;
+    		color: white;
+		}
+		.check-box__active span {
+			width: 22px;
+			height: 18px;
+			background-image: url('https://badboylawnmowerparts.com/v/WebsiteByAlex/optionAndAccessories/img/checkMark.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			right: 5px;
+			top: 7px;
+		}
+
+		/*options conteiner*/
+		.options__category {
+			box-sizing: border-box;
+			width: 268px;
+			padding: 5px;
+			cursor: pointer;
+			border-bottom: 2px black solid;
+		}
+		.options__category h3 {
+			margin: 0;
+			letter-spacing: 1.5px;
+			font-size: 18px;
+		}
+		.options__category:hover {
+			background-color: #f26522;
+    		color: white;
+		}
+		.hide__category_animation {
+			animation-name: hideOption;
+    		animation-duration: 1500ms;
+			animation-fill-mode: forwards;
+		}
+		.hide__category {
+			/*animation: hideOption 2s linear 1 forwards;
+			*/	
+			display: none;
+		}
+		.show__category_animation {
+			animation-name: showOption;
+    		animation-duration: 1200ms;
+    		animation-iteration-count: 1;
+    		animation-fill-mode: forwards;
+		}
+
+		.conteiner__of-elements-under-pic {
+			overflow-y: scroll;
+			display: grid;
+			justify-content: flex-start;
+			grid-template-columns: auto auto auto;
+			grid-gap: 20px;
+		}
+
+		/*scroll for conteiner under elem pic*/
+		/* width */
+		.conteiner__of-elements-under-pic::-webkit-scrollbar {
+		  width: 0px;
+		}
+
+		/* Track */
+		.conteiner__of-elements-under-pic::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 5px grey; 
+		  border-radius: 10px;
+		}
+		 
+		/* Handle */
+/*		.conteiner__of-elements-under-pic::-webkit-scrollbar-thumb {
+		  background: red; 
+		  border-radius: 10px;
+		}*/
+ 	
+		/* Handle on hover */
+		.conteiner__of-elements-under-pic::-webkit-scrollbar-thumb:hover {
+		  background: #b30000; 
+		}
+
+		/*element of options*/
+		.elem-under-pic {
+			flex-flow: column;
+			width: 325px;
+			max-height: 430px;
+			align-items: unset;
+			border: 2px solid #f15b2987;
+		}
+		.elem-under-pic img {
+		    max-height: 204px;
+		    min-height: 75px;
+		    max-width: 269px;
+		}
+
+		.elem-under-pic__pic_holder {
+			align-self: center;
+			width: auto;
+		}
+
+		.modal__for-quick-ref_img {
+		    padding: 5px 0 0 0;
+		    border-radius: 15px;
+		}
+		.elem-under-pic__content_price {
+			text-align: center;
+		    font-size: 18px;
+		    font-weight: bold;
+		    margin: 10px;
+		}
+		.elem-under-pic__content {
+		    display: flex;
+		    flex-flow: column;
+		    justify-content: space-between;
+		    align-items: center;
+		    width: 90%;
+		}
+		.elem-under-pic__content_fit-only {
+			font-size: 20px;
+			margin: 0 0 5px 0;
+			text-align : center;
+			text-decoration: underline;
+			text-decoration-color: red;
+		}
+		.elem-under-pic__content p {
+		    line-height: 22px;
+		    letter-spacing: 1.3px;
+		    margin: 0;
+		    text-align: justify;
+		    max-width: none;
+		    font-size: 18px;
+		}
+		.btn__call-modal_under-pic {
+		    border-width: 2px;
+		    border-radius: 5px;
+		    font-size: 16px;
+		    letter-spacing: 1.2px;
+		    border-color: #ef5c29;
+		    border-style: solid;
+		    margin: 10px 15px 15px;
+		    height: 30px;
+			display: block;
+		    background-color: #fff;
+		    transition: background-color 1s linear;
+		    transition: border-radius 1s cubic-bezier(0.81, 0.23, 1, 1);
+		    text-align: center;
+		}
+
+		.elem-under-pic__error-message {
+			margin: 25px auto;
+			text-align: center;
+			width: 90%;
+			font-size: 18px;
+			font-weight: normal;
+		}
+		.elem-under-pic__error-message_link {
+			margin: 25px auto auto;
+			width: 90%;
+			text-align: center;
+			font-size: 18px;
+			color: black;
+			font-weight: bold;
+			text-decoration-color: red;
+		}
+
+		@media screen and (max-width: 1348px) {
+			.header.sticky-header{ position: relative; }
+			.check-box__conteiner {
+				z-index: 3;
+				background-color: white; 
+				position: absolute;
+			}
+			.conteiner__of-elements-under-pic {
+				margin: auto;
+				justify-content: center;
+				grid-template-columns: auto auto auto;
+			}
+			.check-box__fixed_deactive {
+				display: none;
+			}
+			.check-box__mobile-overlay {
+				display: none;
+			}
+			.check-box__mobile-overlay_active {
+				top: 0;
+				left: 0;
+				display: block;
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+				background-color: #ffffff80;
+			}
+			.check-box__mobile_active {
+				display: block;
+				position: absolute;
+				background-color: white;
+				z-index: 3;	
+			}
+			.elem-under-pic {
+				width: 300px;
+			}
+			.check-box__mobile-button {
+				animation-name: showOption;
+	    		animation-duration: 1200ms;
+	    		animation-iteration-count: 1;
+	    		animation-fill-mode: forwards;
+				display: block;
+				z-index: 3;
+				position: absolute;
+				top: 15px;
+				border: none;
+				left: 15px;
+				padding: 0;
+				background-color: #ca7355b8;
+			}
+			.check-box__mobile-button.check-box__mobile-button_sticky {				
+				animation-name: stickyMobileMove;
+    			animation-duration: 1000ms;
+				animation-fill-mode: forwards;
+				position: fixed;
+				top: 15px;
+			}
+			.check-box__mobile-button img{
+				display: block;
+				width: 56px;
+				height: 56px;
+			}
+		}
+
+		@media screen and (max-width: 1115px) {
+			.main-options__conteiner {
+				grid-column-gap: 0;
+			}
+			.conteiner__of-elements-under-pic {
+				justify-content: center;
+				grid-template-columns: auto auto;
+			}
+		}
+
+		@media screen and (max-width: 650px) {
+			.conteiner__of-elements-under-pic {
+				justify-content: center;
+				grid-template-columns: auto;
+			}
+		}
+
+		@media screen and (max-width: 350px) {
+			.elem-under-pic {
+				width: 290px;
+			}
+		}
