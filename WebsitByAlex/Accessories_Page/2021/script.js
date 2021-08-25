@@ -257,10 +257,9 @@ const rebel = {
 	 		'61" & 72" Decks Only' : ['088-6019-00']
 	 	},
 	 	'Baggers' : {
-	 			'54" Deck Only (Horizontal Blower)' : ["088-1918-50"],
-	 			'54" Deck Only (Vertical Blower)' : ["088-1816-00"],
-				'61" Deck Only (Horizontal Blower)' : ["088-1920-00"],
-				'61" Deck Only (Vertical Blower)' : ['088-1825-00'],
+	 			'54" Deck Only' : ["088-1816-00"],
+				'61" Deck Only' : ['088-1825-00'],
+				'72" Deck Only' : ['088-1828-00'],
 		},
 	 	'Cargo Rack' : ['088-4055-00', '088-4020-00'],
 	 	'Caster Brake' : ['088-2013-00'],
@@ -306,12 +305,9 @@ const rogue = {
 	 		'61" & 72" Decks Only' : ['088-6019-00']
 	 	},
 	 	'Baggers' : {
-	 			'54" Deck Only (Horizontal Blower)' : ["088-1918-00"],
-	 			'54" Deck Only (Vertical Blower)' : ["088-1816-00"],
-				'61" Deck Only (Horizontal Blower)' : ["088-1920-00"],
-				'61" Deck Only (Vertical Blower)' : ['088-1825-00'],
-				'72" Deck Only (Horizontal Blower)' : ["088-1922-00"],
-				'72" Deck Only (Vertical Blower)' : ["088-1828-00"],
+	 			'54" Deck Only' : ["088-1816-00"],
+				'61" Deck Only' : ['088-1825-00'],
+				'72" Deck Only' : ["088-1828-00"],
 		},
 	 	'Cargo Rack' : ['088-4055-00', '088-4020-00'],
 	 	'Caster Brake' : ['088-2013-00'],
@@ -361,10 +357,8 @@ const renegade = {
 	 		'61" & 72" Decks Only' : ['088-6019-00'],
 	 	},
 	 	'Baggers' : {
-	 			'61" Deck Only (Horizontal Blower)' : ["088-1921-00"],
-				'61" Deck Only (Vertical Blower)' : ["088-1824-00"],
-				'72" Deck Only (Horizontal Blower)' : ["088-1923-00"],
-				'72" Deck Only (Vertical Blower)' : ["088-1827-00"],
+				'61" Deck Only' : ["088-1824-00"],
+				'72" Deck Only' : ["088-1827-00"],
 		},
 	 	'Cargo Rack' : ['088-4055-00', '088-4020-00'],
 	 	'Caster Brake' : ['088-2013-00'],

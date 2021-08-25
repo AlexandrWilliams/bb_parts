@@ -7320,7 +7320,7 @@ $210-6005-98$210-6005-98 - Bad Boy Mowers  2013 54"/60" ZT/Chute Assembly$119.99
 $210-6006-00$210-6006-00 - Bad Boy Mowers  72 Rubber Discharge 2012 & old Chute Assembly$99.99
 $210-6010-00$210-6010-00 - Bad Boy Mowers  Rubber Skirt Rear Discharge$0
 $210-6014-00$210-6014-00 - Bad Boy Mowers  2017 MZ Discharge Chute Rubber$29.95
-$210-6015-00$210-6015-00 - Bad Boy Mowers  Discharge Chute Rubber for MZ$109.99
+$210-6015-00$210-6015-00 - Bad Boy Mowers  Discharge Chute Rubber for MZ$39.95
 $210-6015-98$210-6015-98 - Bad Boy Mowers  MZ Discharge Chute Assembly$109.99
 $210-6016-98$210-6016-98 - Bad Boy Mowers 2020 36" Stand On Chute Assembly$109.99
 $210-6025-00$210-6025-00 - Bad Boy Mowers  2019 Belted Chute with Logo$43.95
