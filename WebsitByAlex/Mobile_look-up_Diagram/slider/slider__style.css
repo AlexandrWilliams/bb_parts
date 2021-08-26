@@ -111,6 +111,7 @@
 			font-family: ;
 			color: black !important;
 			text-align: center !important;
+			word-break: break-word;
 		}
 		.slider__elem:hover{
 			background-color: orange;

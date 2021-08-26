@@ -243,7 +243,11 @@ const revolt = {
 			},
 		'Ramps' : ['088-1076-00'],
 		'Rear Tires' : ['022-4040-00'],
-	 	'Side Grass Catcher' : ['088-1005-00', '088-1910-50'],
+	 	'Side Grass Catcher' : {
+	 		'All Decks' : ['088-1005-00'],
+	 		'36" Deck Only' : ['088-1910-36'],
+	 	    '48" 54" 61" Decks Only' : ['088-1910-50']
+	 	},
 	 	'Tire Assembly - Front No-Flat' : ['022-3088-00', '022-0006-98'],
 	 	'Tool Boxes' : ['088-4025-00'],
 	 	'Trash Buckets' : ['088-0213-00'],
